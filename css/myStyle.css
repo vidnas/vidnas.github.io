@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+
+body {
+    margin: 0;
+    background-color: black;
+    color: springgreen;
+    font-family: "Titillium Web";
+    text-align: center;
+}
+
+h1 {
+    color: springgreen;
+    border-right: 2px dashed green;
+    border-left: 2px dashed green;
+    font-style: oblique;
+    }
+
+#list ul, #list ol, #list dl, #list dd, #list dt, #list li{
+   align-content: center;
+    padding:5px;
+    width 50%;
+    background: darkgreen;
+    
+}
+
+#menu {
+    list-style-type: right;
+    margin: 0px;
+    padding: 20px;
+    overflow: hidden;
+    background-image: linear-gradient(rgba(0, 255, 0, 1), rgba(0, 255, 0, 0));
+    transition: transform 2s;
+}
+
+#menu li {
+    display: inline;
+    padding: 20px;
+    float: left;
+}
+
+#menu a {
+    text-decoration-line: none;
+    color: black;
+    font-size: 2em;
+    font-style: oblique;
+    font-weight: bolder;
+}
+
+a {
+    color: green;
+}
+
+a li:hover {
+    color: green;
+    background-image: linear-gradient(rgba(0, 255, 0, 0), rgba(0, 190, 0, 1), rgba(0, 255, 0, 0));
+    transition: 2s;
+    transition-delay: 1s;
+}
+
+a li:active {
+    color: darkgreen;
+}
+
+footer {
+    color: lightgreen;
+    background-image: linear-gradient(to top, green, black);
+    overflow: hidden;
+}
+
+
+.divcenter {
+    margin: 0 auto;
+    text-align: center;
+}
+
+hr {
+    outline-color: green;
+}
+
+table {
+    border-collapse: collapse;
+    align-items: center;
+}
+
+table,
+tr,
+th,
+td {
+    border: 1px solid green;
+    padding: 10px;
+}
+
+th {
+    height: 10px
+}
+
+td:hover {
+    background-image: radial-gradient(rgba(0, 190, 0, 1), rgba(0, 255, 0, 0));
+    color: black;
+    transition: 0.5s;
+}
+
+th:hover {
+    background-image: radial-gradient(rgba(0, 190, 0, 1), rgba(0, 255, 0, 0));
+    color: black;
+    transition: 0.5s;
+}
+
+/* ---- BARS ---- */
+
+.bar {
+    width: 300px;    
+    height: 4px;
+    background: green;
+    transition-property: width;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    margin-bottom: 4px;
+    transition-timing-function: ease-out   
+}
+
+.bar:hover {
+    width: 1075px;
+    background: rgba(0, 255, 127, 1);
+}
+
+
+
+/*          FORMS          */
+
+#formDiv{
+    width: 60%;
+    float: left;
+    border: 2px solid green;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.myForm {
+  padding: 10px;  
+  
+
+}
+
+.myForm labels{
+    display:block;
+}
+
+.myForm input[type="text"], .myForm input[type="tel"], .myForm input[type="number"], .myForm input[type="email"], .myForm textarea{
+    width: 50%;
+    background-color: black;     
+    color: mediumseagreen;
+    border: none;
+    outline:none;
+    border-bottom: 2px solid green;
+    border-right: 2px solid green;
+    transition: 0.5s;
+}
+
+.myForm input[type="text"]:focus, .myForm input[type="tel"]:focus, .myForm input[type="number"]:focus, .myForm input[type="email"]:focus, .myForm textarea:focus{
+    width: 90%;
+    background-color: black;     
+    color: mediumseagreen;
+    border: none;
+    outline:none;
+    border-bottom: 2px solid green;
+    border-right: 2px solid green;
+}
+
+.btn1{
+    color: black;
+    background-color: green;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/*         ADDRESS         */
+
+Address{
+    color:mediumseagreen;
+    width: 30%;
+    float: right;
+    border: 2px solid green;
+    margin: 0px;
+    padding: 30px;
+    padding-bottom: 300px;
+    display:block;
+    font-weight: bolder;
+}
+
+.clear{
+    clear:both;
+}
