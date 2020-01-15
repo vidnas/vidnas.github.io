@@ -1,112 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 
 <head>
-    <title> Home Page</title>
-    <meta charset="UTF-8">
-
-    <!-- css file link -->
-    <link rel="stylesheet" href="css/myStyle.css">
-    <meta name="description" content="DPP-Development Professional Program covering Front end and Back end">
-    <meta name="keywords" content="HTML, CSS, JavaScript, C#, OOP, MVC, SQL">
+    <title>vidnas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
 </head>
 
 <body>
+    <main>
+        <section id="landing">
+            <div id="top-menu">
+                <div id="landing-text">
+                    <h1> vid.nas </h1>
+                    <h2> Portfolio and Work </h2>
 
-
-    <ul id="menu">
-        <a href="index.html">
-            <li>HOME</li>
-        </a>
-        <a href="about.html">
-            <li>ABOUT</li>
-        </a>
-        <a href="students.html">
-            <li>STUDENTS</li>
-        </a>
-        <a href="contact.html">
-            <li>CONTACT</li>
-        </a>
-    </ul>
-
-    <div class="container">
-
-        <h1>Welcome to DPP<center><div class="bar"></div></center></h1>
-        
-
-        <h3>HTML5</h3>
-        <p><b>HTML5</b> is a software solution stack that defines the properties and behaviors of web page content by implementing a markup based pattern to it. <br>
-
-            <a href="https://en.wikipedia.org/wiki/HTML5">source</a>
-        </p>
-
-        <br><br>
-        <center>
-       <div class="bar"></div>
-       <div class="bar"></div>
-       <div class="bar"></div>
-       <div class="bar"></div>
-       <div class="bar"></div>
-        </center>
-
+                    <!-- Menu Buttons -->
+                    <div>
+                        <a href="#portfolio" class="button1">Portfolio</a>
+                        <a href="#experience" class="button1">Experience</a>
+                        <a href="#news" class="button1">News</a>
+                        <a href="#contact" class="button1">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div id="landing-image"></div>
+        </section>
         <br><br>
 
-        <h1>Hello World!<center><div class="bar"></div></center></h1>
+<!--- PORTFOLIO --->
 
-        <p>the <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
-        </p>
+        <section id="portfolio">
+            <div class="header">
+                <h2>portfolio</h2>
+            </div>
+<center>
+            <img src="images/cars1.jpg" alt="Portfolio">
+            <div class="caption">
+                <h3>Photo 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <img src="images/city1.jpg" alt="Portfolio">
+            <div class="caption">
+                <h3>Photo 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <img src="images/city2.jpg" alt="Portfolio">
+            <div class="caption">
+                <h3>Photo 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <img src="images/city3.jpg" alt="Portfolio">
+            <div class="caption">
+                <h3>Photo 4</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+</center>
+        </section> <br><br>
 
-        <center><div class="bar"></div>
+<!--- EXPERIENCE TIMELINE --->
+       
+        <section id="experience">
+          
+           <div class="header">
+                <h2>Experience</h2>
+            </div>
+            
+            <div class="timeline">
+                <div class="container left">
+                    <div class="content">
+                        <h2>2017</h2>
+                        <p>Lorem ipsum..</p>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <h2>2016</h2>
+                        <p>Lorem ipsum..</p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline">
+                <div class="container left">
+                    <div class="content">
+                        <h2>2017</h2>
+                        <p>Lorem ipsum..</p>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <h2>2016</h2>
+                        <p>Lorem ipsum..</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <img src="images/pic1.jpg" alt="kingsx station" width=40%>
+ <div id="clear"></div>
 
-        <div class="bar"></div></center>
+<!--- NEWS --->
+<section id="news">
+      <div class="head">
+        <h2>Latest /cyb/ news</h2>
+    </div>
+    
+    <div>
+        <article class="block">
+            <h3>Lorem</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores impedit sapiente explicabo ullam voluptatum obcaecati expedita maxime minus labore harum odio optio perspiciatis quae numquam dolores cupiditate ex, dolor magnam. <a href="lorem">Read More...</a></p>
+        </article>
+    </div>
+    <div>
+        <article class="block">
+            <h3>ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos explicabo cumque error deleniti recusandae harum neque? Similique dolorem architecto, a deleniti quas minus quisquam pariatur labore, magni odit veritatis vitae! <a href="lorem">Read More...</a></p>
+        </article>
+    </div>
+    <div>
+        <article class="block">
+            <h3>mori</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione minus quibusdam eum provident hic doloribus ut magni dolorem. Nemo obcaecati accusantium magnam nulla molestiae quae nisi fugit! Quam, fuga, voluptatem! <a href="lorem">Read More...</a></p>
+        </article>
+    </div>
+    </section>
+    
+<div id="clear"></div>
 
-        <h4>The Items Ordered</h4>
-        <ul type="square" id="list">
-            <li> markers</li>
-            <li> books</li>
-            <ul>
-                <li> HTML/CSS</li>
-                <li> Javascript</li>
-                <li> C# Programming</li>
-            </ul>
-            <li> tea</li>
-            <li> sugar</li>
-            <li> milk</li>
-        </ul>
 
-        <h4> DPP Program</h4>
-        <ol type="I" id="list">
-            <li> HTML/CSS</li>
-            <li> JavaScript</li>
-            <li> C#</li>
-            <li> ASP .NET / MVC</li>
-            <li> Portfolio</li>
-            <li> Open Lab</li>
-        </ol>
-        <dl id="list">
-            <dt>HTML</dt>
-            <dd>Hyper Text Markup Language</dd>
-            <dt>CSS</dt>
-            <dd>Cascading Style Sheets</dd>
-            <dt>JS</dt>
-            <dd>JavaScript</dd>
-            <dt>MP3</dt>
-            <dd>MPEG-2 Audio Layer III</dd>
-            <dt>AVI</dt>
-            <dd>Audio Video Interleave</dd>
-
-        </dl>
+<!---- CONTACT ME ---->
+<section id="contact">
+      <div class="head">    
+        <h2>contact me</h2>
     </div>
 
-    <footer>
+<div id="formDiv">
+
+            <form action="mailto:maxhfwork@gmail.com" method="post" enctype="text/plain" class="myForm">
+                <label>ID</label><br>
+                <input type="number" name="id"><br><br>
+                <label>NAME</label><br>
+                <input type="text" name="name" required><br><br>
+                <label>GENDER</label><br>
+                Female:<input type="radio" name="gender" value="female">
+                Male:<input type="radio" name="gender" value="male">
+                Other:<input type="radio" name="gender" value="other"><br><br>
+                <label>MOBILE</label><br>
+                <input type="tel" name="tel" required><br><br>
+                <label>LANDLINE</label><br>
+                <input type="tel" name="landline"><br><br>
+                <label>EMAIL</label><br>
+                <input type="email" name="email" required><br><br>
+                <label>MESSAGE</label><br>
+                <textarea name="message"></textarea><br><br>
+
+                <input type="submit" value="SUBMIT" class="btn1">
+            </form>     
+</div>       
+       
+        <div id="addressDiv">
+            <address>
+                JustIT Training<br>
+                2nd Floor, St Clares<br>
+                London<br>
+                EC3N 1DD<br>
+                EMAIL: <a href="mailto:info@justit.co.uk">info@justit.co.uk</a><br>
+                PHONE: 02082525250<br>
+            </address>
+        </div>
+</section>
+
+<div id="clear"></div>
+
+
+<!--- SCROLL BUTTON --->
+<div id="autoscroll" class="button1">
+    <a href="#landing">/    /</a>
+</div>
+
+
+<div>
+<footer>
         <p style="text-align: center; ">&copy; JUST IT AND APPRENTICESHIPS</p>
     </footer>
+</div>
 
+</main>
 </body>
 
 </html>
