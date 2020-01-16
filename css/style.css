@@ -4,40 +4,40 @@
 main{
     width: 80%;
     margin: auto;
+    
 }
-
+* {
+  box-sizing: border-box;
+}
 body {
     margin: 0;
-    height: auto;
+    height: auto;    
     background-color: black;
     color: dodgerblue;  
-    font-family: "titillium web"
+    font-family: "titillium web";
 }
-
 a{
     color: lightpink;
     text-decoration: none;
     }
-
 a:visited{
-    color: steelblue;
+    color: hotpink;
 }
-
 h1{
-    font-size: 2.5rem;
+    font-size: 5rem;
     text-transform: uppercase;
     text-decoration: overline;
     margin: 0;
+    text-shadow: 2px 2px 8px black;
 }
-
 h2{
     font-size: 1.5rem;
     text-transform: uppercase;
     text-decoration: overline;
     margin-top: 0;
     color: lightpink;
+    text-shadow: 2px 2px 8px black;
 }
-
 h3{
     font-size: 1rem;
     text-transform: uppercase;
@@ -49,23 +49,46 @@ h3{
 
 
 /* --- ARTICLE BLOCKS ---*/
-.block{
-    display: inline-block;
-    width: 33.33%;
-    height: auto;
-    float: left;
-    box-sizing: border-box;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    padding-bottom: 0em;
-    margin-bottom: 3em;
-    
-    text-align: justify;
-    border-width: 2px;
-    border-style: solid;
-    border-image: linear-gradient(to top, rgba(30, 144, 255, 1), rgba(30, 144, 255, 0)) 1;
-}
-
+#flexcon{
+        display: flex;
+        flex-direction:row;        
+    }    
+    #flex1{
+        border-width: 2px;
+        border-style: solid;
+        border-image: linear-gradient(to top, rgba(30, 144, 255, 1), rgba(30, 144, 255, 0)) 1;
+        order: 2;
+        padding: 10px;
+        flex: 1;
+        margin:2px;
+    }    
+    #flex2{
+        border-width: 2px;
+        border-style: solid;
+        border-image: linear-gradient(to top, rgba(30, 144, 255, 1), rgba(30, 144, 255, 0)) 1;
+        order: 3;
+        padding: 10px;
+        flex: 1;
+        margin:2px;
+    }    
+    #flex3{
+        border-width: 2px;
+        border-style: solid;
+        border-image: linear-gradient(to top, rgba(30, 144, 255, 1), rgba(30, 144, 255, 0)) 1;
+        order: 4;
+        padding: 10px;
+        flex: 1;
+        margin:2px;
+    }    
+    #flex4{
+        border-width: 2px;
+        border-style: solid;
+        border-image: linear-gradient(to top, rgba(30, 144, 255, 1), rgba(30, 144, 255, 0)) 1;
+        order: 1;
+        padding: 10px;
+        flex: 1;
+        margin:2px;
+    }
 
 /* --- CAPTIONS ---*/
 .caption{
@@ -88,7 +111,6 @@ h3{
     border-style: solid;
     border-image: linear-gradient(to top, rgba(30, 144, 255, 1), rgba(30, 144, 255, 0)) 1;
 }
-
 #landing-text{
     display: flex;
     flex: 0 1 40vh;
@@ -96,9 +118,9 @@ h3{
     height: 50vh;
     justify-content: center;
     text-align: center;
-    background-image: radial-gradient(#0C3966 20%, rgba(0, 255 ,0 ,0) 40%, rgba(0, 255 ,0 ,0) 40%);
+    background-image: linear-gradient(180deg, rgba(12,57,102,0) 20%, rgba(12,57,102,1) 34%, rgba(38,146,255,1) 49%, rgba(33,128,224,1) 51%, rgba(12,57,102,1) 64%, rgba(12,57,102,0) 80%);
+    /*background-image: linear-gradient(rgba(12,57,102,0) 30%, rgba(12,57,102,1) 50%, rgba(12,57,102,0) 80%);*/
 }
-
 #landing-image{
     background-image: url("../images/city4.jpg");    
     background-position: center;
@@ -110,9 +132,12 @@ h3{
 
 
 /* --- BUTTONS --- */
-.button1{
-    border: 1px #ccc solid;
+.button1{    
+    display:inline-block;
+    width:120px;
+    height:40px;
     padding: 0.5rem 0.5rem;
+    margin-bottom:3px;
     border-radius: 5%;
     border: none;
     color: lightpink;
@@ -120,11 +145,10 @@ h3{
     font-family: "titillium web";
     text-transform: uppercase;
     transition-duration: 1s;
+    box-sizing: border-box;
 
 }
-
-.button1:hover{
-    border: 1px #ccc solid;
+.button1:hover{    
     padding: 0.5rem 0.5rem;
     border-radius: 20%;
     border: none;    
@@ -135,19 +159,80 @@ h3{
 
 #autoscroll{
     position: fixed;
-    top: 40vh;
+    top: 90vh;
     margin-left: -5.5rem;
+}
+.button2{
+    padding: 0.5rem 0.5rem;
+    border-radius: 5%;
+    border: none;
+    color: lightpink;
+    background-color: #0c3966;
+    font-family: "titillium web";
+    text-transform: uppercase;
+    transition-duration: 1s;
+    box-sizing: border-box;
+
+}
+.button2:hover{    
+    padding: 0.5rem 0.5rem;
+    border-radius: 20%;
+    border: none;    
+    background-color: rgba(30, 144, 255, 0.01);
+    font-family: "titillium web";
+    text-transform: uppercase;           
 }
 
 
 /* --- IMAGES --- */
 img {
     display: block;
-    width: 70%;
+    width: 100%;
     height: auto;
     padding: 0.5em, 0em;
     background-size: contain;
-    margin-top: 3em;
+    margin-top: 3em;   
+    transition: all .5s ease-in-out;
+    
+}
+img:hover {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0.5em, 0em;
+    background-size: contain;
+    margin-top: 3em; 
+    transform: scale(1.01);
+    }
+
+
+
+/* --- BLADE RUNNER ---*/
+#logoicon{
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    top: 1vh;
+    margin-left: 1.8%;
+    opacity: 0.9;
+}
+#logoicon2{
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    top: 1vh;
+    margin-left: 58%;
+    opacity: 0.9;
+}
+#logoicon:hover{
+    opacity: 0;
+    transform: scale(0.8) rotate(-10deg);
+    transition: 1s;
+}
+#logoicon2:hover{
+    opacity: 0;
+    transform: scale(0.8) rotate(10deg);
+    transition: 1s;
 }
 
 
@@ -159,19 +244,17 @@ img {
 
     margin-bottom: 10px;
     padding: 10px;
+    box-sizing: border-box;
 }
-
 .myForm {
   padding: 10px;   
   border-width: 1px;
   border-style: solid;
   border-image: linear-gradient(to top, rgba(30, 144, 255, 1), rgba(30, 144, 255, 0)) 1;
 }
-
 .myForm labels{
     display:block;
 }
-
 .myForm input[type="text"], .myForm input[type="tel"], .myForm input[type="number"], .myForm input[type="email"], .myForm textarea{
     width: 50%;
     background-color: black;     
@@ -182,7 +265,6 @@ img {
     border-right: 2px solid dodgerblue;
     transition: 0.5s;
 }
-
 .myForm input[type="text"]:focus, .myForm input[type="tel"]:focus, .myForm input[type="number"]:focus, .myForm input[type="email"]:focus, .myForm textarea:focus{
     width: 90%;
     background-color: black;     
@@ -192,7 +274,6 @@ img {
     border-bottom: 2px solid dodgerblue;
     border-right: 2px solid dodgerblue;
 }
-
 .btn1{
     color: black;
     background-color: dodgerblue;
@@ -200,10 +281,10 @@ img {
     padding: 10px;
     font-weight: bold;
 }
-
 .btn1:hover{
     background-color: lightblue;
     transition: 0.5s;
+    
 }
 
 
@@ -215,11 +296,10 @@ address{
     border-width: 1px;
     border-style: solid;
     border-image: linear-gradient(to top, rgba(30, 144, 255, 1), rgba(30, 144, 255, 0)) 1;
-    margin: 10px;
-    padding: 5px;
+    padding: 100px;
     padding-bottom:;
     text-align: center;
-    
+    box-sizing: border-box; 
     
 }
 
@@ -227,15 +307,23 @@ address{
 /* --- FOOTER --- */
 footer {
     color: dodgerblue;
-    background-image: linear-gradient(to top, rgba(30, 144, 255, 0.8), black);
+    background-image: linear-gradient(to top, #0c3966, black);
     overflow: hidden;
-    width: 100%;
+}
+
+.fullfooter{
+    width:100%;
 }
 
 
 
 
 /* ---- TIMELINE ----*/
+
+#experience{
+    position:relative;
+
+}
 
 /* The actual timeline (the vertical ruler) */
 .timeline {
@@ -247,7 +335,7 @@ footer {
 /* The actual timeline (the vertical ruler) */
 .timeline::after {
   content: '';
-  position: absolute;
+  position:absolute;
   width: 6px;
   background-color:rgba(30, 144, 255, 1) ;
   top: 0;
@@ -261,7 +349,7 @@ footer {
   padding: 10px 40px;
   position: relative;
   background-image: linear-gradient(to top, rgba(30, 144, 255, 1), rgba(30, 144, 255, 0));
-  width: 50%;
+  width: 50%;  
 }
 
 /* The circles on the timeline */
@@ -275,12 +363,14 @@ footer {
   border: 4px solid pink;
   top: 15px;
   border-radius: 50%;
-  z-index: 1;
-}
+  z-index: 1;  
+  }
 
 /* Place the container to the left */
 .left {
-  left: -10%;
+  position:relative;
+  left: 0%;
+
 }
 
 /* Place the container to the right */
@@ -321,6 +411,10 @@ footer {
   left: -16px;
 }
 
+.left::after {
+    right: -3.5%;
+}
+
 /* The actual content */
 .content {
   padding: 20px 30px;
@@ -329,9 +423,26 @@ footer {
   border-radius: 6px;
 }
 
-/* Media queries - Responsive timeline on screens less than 600px wide */
+/* --- Media queries --- */
 @media screen and (max-width: 600px) {
-
+    
+    
+    .block, address, #formDiv{
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    
+    .button2{
+        position: fixed;
+        margin-left: 10rem;
+    }    
+    
+    #flexcon{
+        display: flex;
+        flex-direction:column;
+    }
+    
 /* Place the timelime to the left */
   .timeline::after {
     left: 31px;
