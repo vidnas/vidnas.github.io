@@ -1,58 +1,51 @@
 <!DOCTYPE html>
 <html lang="">
 
+    
 <head>
     <meta charset="UTF-8">
     <title>M H F</title>
     <meta name="Author" content="" />
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+    
     
 </head>
 
 <body>
 
-    <section id="splash" >
+    <section id="splash" >       
+        
         <h1  data-aos="fade" data-aos-duration="2000">MAX HOPKINS - FAGAN</h1>
         <h2  data-aos="fade" data-aos-duration="2000" data-aos-delay="1000">junior web designer and front end developer</h2>
 
         <div id="splashscroll">
-            <h3>scroll</h3>
-            <span class="arrow arrow-bottom"></span>
+           <a href=#left-navbox><span class="arrow arrow-bottom"></span></a> 
         </div>
+    
+        
     </section>
 
 
 
-
+<!-- NAV BAR -->
 
     <section id="contentpage" data-aos="fade" data-aos-duration="2000">
-        <div id="logo">
-            <center>
-                <h1 id="title" class="glow"  data-aos="fade" data-aos-duration="2000">MAX HF</h1>
-            </center>
-        </div>
+        
+        <div id="left-navbox" data-aos="fade" data-aos-duration="2000">
+                <button class="button1" onclick="replace('experience','projects','contact','about')">About</button>
+                <button class="button1" onclick="replace('about','projects','contact','experience')">Experience</button>
+                <button class="button1" onclick="replace('about','contact','experience','projects')">Projects</button>
+                <button class="button1" onclick="replace('about','experience','projects','contact')">Contact</button>
+            </div>
+        
         
         <!-- MAIN NAV PAGE -->
-        <div id="pagecontainer">
-
-            <div id="left-navbox" data-aos="fade-right" data-aos-duration="2000">
-                <h2>N A V</h2>
-                <br>
-                <br><br>                        
-
-                <button class="button1" onclick="replace('experience','projects','contact','about')">About</button><br><br>
-                <button class="button1" onclick="replace('about','projects','contact','experience')">Experience</button><br><br>
-                <button class="button1" onclick="replace('about','contact','experience','projects')">Projects</button><br><br>
-                <button class="button1" onclick="replace('about','experience','projects','contact')">Contact</button><br><br>
-
-            </div>
-            
+        <div id="pagecontainer">         
 
 
-            <div id="right-contentbox">
-                <div id="about" style="display:none" class="right-content">
+            <div id="right-contentbox" data-aos="fade">
+                <div id="about" style="display:yes" class="right-content">
                     <h2>About Me</h2>
                     <p class="content-text"> I am a junior web designer and front end developer. I have a passion for minimalist dark themes, music production and creative projects. </p>
                 </div>
@@ -107,28 +100,29 @@
                     <p class="content-text"> Here...(He slides a gun across the table.) 8... I already got a gun. (He passes it back to the man.) 9... (Marty looks at everyone around him and each and every one of them returns the wide-eyed, silent gaze.)Hey, hey, thanks. Of course, you understand that if you lose...I'm taking it back. (He smiles and walks away.) (Marty stares after the gun salesman dumbfounded.) Thanks again. (Marty walks the other direction and runs into Maggie and Seamus. Maggie is carrying William. They continue along together.)(There is a huge explosion. Clara nearly falls off the train. Her dress gets caught and that's the only reason she doesn't fall. She's hanging upside down.) Whoa!! Emmett! Clara! Hold on! I can't! (She screams in desperation as her dress begins to rip.)</p>
                 </div>
             </div>
-        </div>
+      </div>
     </section>
     
     <!-- PROJECTS PAGE -->
     <section id="projects-big" data-aos="fade" data-aos-duration="2000">
-      <div id="pagecontainer">
+        
       
-      <div id="left-navbox" data-aos="fade-right" data-aos-duration="2000" data-aos-anchor-placement="bottom-bottom">
-                <h2>PROJECTS</h2>
-                <br>
-                <br><br>                        
+    
+     <div id="left-navbox" data-aos="fade-right" data-aos-duration="2000" data-aos-anchor-placement="bottom-bottom">
+<!--                <a href=#contentpage> <button class="button2" id="homebutton">home</button></a>-->
+                <button class="button1" onclick="replace('bootstrap', 'vidnas', 'js-game', 'bloody')">T Shirt Co.</button>
+                <button class="button1" onclick="replace('bloody', 'vidnas', 'js-game', 'bootstrap')">Bootstrap</button>
+                <button class="button1" onclick="replace('bootstrap', 'bloody', 'js-game', 'vidnas')">vidnas</button>
+                <button class="button1" onclick="replace('bootstrap', 'vidnas', 'bloody', 'js-game')">JS Game</button>
 
-                <button class="button1" onclick="replace('bootstrap', 'vidnas', 'js-game', 'bloody')">Bloody Altar</button><br><br>
-                <button class="button1" onclick="replace('bloody', 'vidnas', 'js-game', 'bootstrap')">Bootstrap</button><br><br>
-                <button class="button1" onclick="replace('bootstrap', 'bloody', 'js-game', 'vidnas')">vidnas</button><br><br>
-                <button class="button1" onclick="replace('bootstrap', 'vidnas', 'bloody', 'js-game')">JS Game</button><br><br>
 
-            </div>
-       
+    </div>
+     
+      <div id="pagecontainer" data-aos="fade">     
+           
         <div id="bloody" style="display:none" class="proj-expanded">
                     <h2>Bloody Altar</h2>
-                    <img src="images/ba-big.png" class="imgexpand">
+                    <img src="images/ba-big.png">
                     <div class="proj-text-box"><p class="proj-content-text"> Here...(He slides a gun across the table.) 8... I already got a gun. (He passes it back to the man.) 9... (Marty looks at everyone around him and each and every one of them returns the wide-eyed, silent gaze.)Hey, hey, thanks. Of course, you understand that if you lose...I'm taking it back. (He smiles and walks away.) (Marty stares after the gun salesman dumbfounded.) Thanks again. (Marty walks the other direction and runs into Maggie and Seamus. Maggie is carrying William. They continue along together.)(There is a huge explosion. Clara nearly falls off the train. Her dress gets caught and that's the only reason she doesn't fall. She's hanging upside down.) Whoa!! Emmett! Clara! Hold on! I can't! (She screams in desperation as her dress begins to rip.)</p></div>
                 </div>
                 
@@ -149,6 +143,7 @@
                     <div class="proj-text-box"><p class="proj-content-text"> Here...(He slides a gun across the table.) 8... I already got a gun. (He passes it back to the man.) 9... (Marty looks at everyone around him and each and every one of them returns the wide-eyed, silent gaze.)Hey, hey, thanks. Of course, you understand that if you lose...I'm taking it back. (He smiles and walks away.) (Marty stares after the gun salesman dumbfounded.) Thanks again. (Marty walks the other direction and runs into Maggie and Seamus. Maggie is carrying William. They continue along together.)(There is a huge explosion. Clara nearly falls off the train. Her dress gets caught and that's the only reason she doesn't fall. She's hanging upside down.) Whoa!! Emmett! Clara! Hold on! I can't! (She screams in desperation as her dress begins to rip.)</p></div>
                 </div>
         </div>
+          
     </section>
 
 

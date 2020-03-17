@@ -6,7 +6,7 @@
 * {
     color: white;
     font-family: Montserrat;
-
+    scroll-behavior: smooth;
 }
 
 body {
@@ -15,6 +15,7 @@ body {
     background-repeat: no-repeat;
     background-color: black;
     background-attachment: fixed;
+    
 
     /*    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(20,20,20,1) 49%, rgba(0,0,0,1) 100%);*/
 }
@@ -87,10 +88,10 @@ a {
 
 .arrow {
     display: inline-block;
-    width: 30px;
-    height: 30px;
-    border-top: 4px solid white;
-    border-right: 4px solid white;
+    width: 40px;
+    height: 40px;
+    border-top: 7px solid white;
+    border-right: 7px solid white;
 }
 
 .arrow-bottom {
@@ -101,25 +102,27 @@ a {
 .arrow-bottom:hover {
     transform: rotate(135deg);
     padding: 0;
-    width: 10px;
-    height: 10px;
-    border-top: 4px solid black;
-    border-right: 4px solid black;
+    border-top: 7px solid black;
+    border-right: 7px solid black;
     transition-duration: 1s;
 }
 
 #splashscroll {
     position: absolute;
     margin-left: 48%;
-    margin-top: 55px;
+    margin-top: 50px;
 }
 
 /* PAGE CONTAINER*/
 
 #pagecontainer {
-    box-sizing: border-box;
-    display: flex;
+/*    box-sizing: border-box;*/
+/*    display: flex;*/
+    margin-top: 2vh;
     min-height: 500px;
+/*    border: 1px white solid;*/
+    width: 100%;
+    
 }
 
 #logo {
@@ -131,22 +134,26 @@ a {
 /* LEFT NAV BOX */
 
 #left-navbox {
-    position: relative
-    bottom:160px;
-    left: 9px;
-    width: 200px;
-    height: 600px;
-    margin-left: 30px;
-    background-image: linear-gradient(180deg, rgba(100, 100, 100, 0), rgba(100, 100, 100, 0.5));
-    /*    border: 2px white solid;*/
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: auto;
+    background: black;
+    border-top: grey 1px solid;
+    border-bottom: grey 1px solid;
+    opacity: 80%;
     text-align: center;
+    z-index: 100;
+/*    margin-top: 0;*/
 }
 
 
 
 #left-navbox h2 {
+/*
     border-bottom: 1px white solid;
     border-top: 1px white solid;
+*/
 }
 
 .button1 {
@@ -163,6 +170,22 @@ a {
     -webkit-transition: all 2s ease-in-out;
 }
 
+.button2 {
+
+    display: inline-block;
+    font-family: "Germania One";
+    text-transform: none;
+    margin-top: 20px;
+    font-size: 2em;
+    border: none;
+    background: none;
+    cursor: crosshair;
+    transition: 2s ease-in-out;
+    -webkit-transition: all 2s ease-in-out;
+    overflow: hidden;
+}
+
+
 #left-navbox .button1:hover {
 
     font-family: "Germania One";
@@ -171,6 +194,11 @@ a {
     opacity: 0%;
 }
 
+.homebutton {
+    float: left;
+    
+    
+}
 
 
 .insetborder {
@@ -182,24 +210,19 @@ a {
     box-shadow: inset 0 0 0 5px #2a2a2a;
     transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
-
 }
 
 #right-contentbox {
-    min-width: 72%;
-    margin-left: 50px;
-    padding-left: 20px;
-    padding-right 20px;
+    
     transition-duration: 2s;
     text-align: center;
-    /*    border: 2px black dashed;*/
-    /*    background-color: rgba(100, 100, 100, 0.3);*/
-
+    
 }
 
 .right-content {
-    width: 90%;
-        transition-duration: 2s;
+    margin: auto;
+    width: 70%;
+    transition-duration: 2s;
     text-align: center;
 }
 
@@ -211,7 +234,7 @@ a {
     display: flex;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0);
-    width: 110%;
+    width: 100%;
 
 }
 
@@ -289,8 +312,10 @@ a {
 /* PROJECTS EXPANDED */
 
 #projects-big{
+    margin: auto;
     margin-top: 200px;
-    padding-top: 200px;
+    padding-top: 0px;
+    min-height: 800px;
     width:100%;
     background-color: black;
     background-image: url(../images/cansmall.jpg);
@@ -300,32 +325,46 @@ a {
     }
 
 .proj-expanded {
+    margin: auto;
     width: 70%;
     transition-duration: 2s;
     text-align: center;
     padding-left: 30px;
+    position: relative;
     
 }
 
+#pagecontainer img {
+    max-width: 100%;
+    height: auto;
+    border: 1px gray solid;
+}
+
+
+
 .proj-text-box{
-    width:798px;
-    height:600px;
+    margin: auto;
     opacity: 0;
     border: 2px white solid;
     background-color: rgba(0, 0, 0, 0.7);    
-    position:absolute;
-    left:416px;
-    bottom: -1988px;
-    transition-duration: 05.s;
+    
+    position: absolute;
+    left: 22%;
+    top: 32%;
+    width: 60%;
+    
+    z-index: 100;
+    transition-duration: 05.s;    
+    
     }
 
 .proj-text-box:hover{
     opacity:.9;
 }
+
 .proj-content-text{
     background-color: rgba(0, 0, 0, 0.8);
     padding: 20px;
-    margin-top: 180px;
 }
 
 
