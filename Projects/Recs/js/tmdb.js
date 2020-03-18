@@ -11,7 +11,7 @@ function completeSearch() {
 function movieSearch() {
 
     var userMovie = document.getElementById("userInput").value;
-    var url = 'http://api.themoviedb.org/3/search/movie?api_key=898c53e4648c8d01605385c636421936&query=' + userMovie;
+    var url = 'https://api.themoviedb.org/3/search/movie?api_key=898c53e4648c8d01605385c636421936&query=' + userMovie;
 
     var xhr = new XMLHttpRequest();
 
