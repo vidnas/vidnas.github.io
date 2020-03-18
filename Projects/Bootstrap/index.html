@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <title>/// vid.nas ///</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <!-- LOADER -->
+    <div class="loader-wrapper"></div>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="videos/PDbgBLUE.mp4" type="video/mp4">
+        </video>
+        <div class="container h-100 w-100">
+            <div class="d-flex h-100 text-center align-items-center">
+                <div class="w-100 text-white">
+
+                    <img src="images/logo.png" data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in" style="width: 50vw; height: auto">
+                    <p class="lead mb-0"></p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- NAV BAR -->
+    <nav class="navbar fixed-top" data-aos="fade" data-aos-anchor="#about">
+
+        <button class="navbar-toggler bg-dark text-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+            // NAV //
+
+        </button>
+
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav mr-4">
+                <li class="nav-item">
+                    <a class="nav-link" data-value="about" href="#about">ABOUT</a> </li>
+                <li class="nav-item">
+                    <a class="nav-link " data-value="releases" href="#releases">AUDIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " data-value="blog" href="#videos">VIDEO</a> </li>
+                <li class="nav-item">
+                    <a class="nav-link " data-value="contact" href="#contact">COMMS</a> </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ABOUT -->
+
+    <div class="container" id="about">
+
+        <div class="overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="videos/HKsmall.mp4" type="video/mp4">
+        </video>
+        <div class="container h-100 w-100 align-items-center justify-content-center">
+            <div class="h-100 text-center align-items-center justify-content-center">
+
+                <div class="w-100 text-white" id="big-title-text">
+
+                    <h1 class="display-1">VISIONS <br> of the <br> FUTURE <br> found on <br> DISCARDED VHS</h1>
+
+                    <p class="display-4" role="button" onclick="replace('big-title-text', 'small-about-text')">more</p>
+
+
+                </div>
+
+                <div class="w-100 text-white" id="small-about-text">
+                    <h1 class="display-4">
+                        vid.nas is an audio/visual project inspired by cyberpunk dystopias depicted in 80s Sci-Fi films and anime.<br><br> Melancholic, densely layered and emotive synthesised music.
+                    </h1>
+
+                    <p class="display-4" role="button" onclick="replace('small-about-text', 'big-title-text')" style="padding-top:6rem;">back</p>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- RELEASES -->
+
+    <hr>
+
+    <section id="content-background">
+
+
+        <div class="container" id="releases">
+            
+              <center> 
+              <h1 class="display-4"> AUDIO </h1>
+               <p class="display-4"> click artwork </p> 
+                </center>
+                
+            <div class="row">
+
+                <div class="col-lg-6 mb-4" data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-easing="ease-in">
+                    <div class="card text-white">
+                        <a data-toggle="collapse" href="#panzer" role="button" aria-expanded="false" aria-controls="panzer"><img class="card-img-top" src="images/releases/PPVNsmall.jpg" alt=""></a>
+
+                        <div class="collapse" id="panzer">
+                            <div class="card-body trans-card">
+                                <h4 class="card-title">
+                                    <a href="#">vid.nas VS Panzer Paradise</a>
+                                </h4>
+                                <p class="card-text">Split EP with Panzer Paradise <br> Digital and Cassette released by Asura Revolver.</p>
+
+                                <iframe src="https://open.spotify.com/embed/album/5jNSL9Z8cE9j0sqYwj3cq2" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4" data-aos="fade-left" data-aos-anchor-placement="center-bottom" data-aos-easing="ease-in">
+                    <div class="card text-right text-white">
+                        <a data-toggle="collapse" href="#rains" role="button" aria-expanded="false" aria-controls="rains"><img class="card-img-top" src="images/releases/RAINsmall.jpg" alt=""></a>
+
+                        <div class="collapse" id="rains">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <a href="#">when it rains it pours</a>
+                                </h4>
+                                <p class="card-text">Single <br> Digital released independantly.</p>
+                                <iframe src="https://open.spotify.com/embed/album/1wqfgsd0OGQYMDap2QWz2I" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4" data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-easing="ease-in">
+                    <div class="card text-white">
+                        <a data-toggle="collapse" href="#MCD" role="button" aria-expanded="false" aria-controls="MCD"><img class="card-img-top" src="images/releases/MCRsmall.jpg" alt=""></a>
+                        <div class="collapse" id="MCD">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <a href="#">MACHINE CITY REDISCOVERED</a>
+                                </h4>
+                                <p class="card-text">Remix LP of tracks from MACHINE CITY by various artists. <br> Digital released by artist.</p>
+                                <iframe src="https://open.spotify.com/embed/album/370HjFvpjR0JR4eUJosCrg" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4" data-aos="fade-left" data-aos-anchor-placement="center-bottom" data-aos-easing="ease-in">
+                    <div class="card text-right text-white">
+                        <a data-toggle="collapse" href="#MC" role="button" aria-expanded="false" aria-controls="MC"><img class="card-img-top" src="images/releases/MCsmall.jpg" alt=""></a>
+                        <div class="collapse" id="MC">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <a href="#">MACHINE CITY SE</a>
+                                </h4>
+                                <p class="card-text">Split EP with Crystal Cola <br> Cassette released by Seikomart records.</p>
+                                <iframe src="https://open.spotify.com/embed/album/6iot28l0WPmqNYaY7MCaLN" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4" data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-easing="ease-in">
+                    <div class="card text-white">
+                        <a data-toggle="collapse" href="#MMI" role="button" aria-expanded="false" aria-controls="MMI"><img class="card-img-top" src="images/releases/MMIsmall.jpg" alt=""></a>
+                        <div class="collapse" id="MMI">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <a href="#">MAN MACHINE INTERFACE</a>
+                                </h4>
+                                <p class="card-text">LP <br> Cassette released by Seikomart Records</p>
+                                <iframe src="https://open.spotify.com/embed/album/5YTPENmw3ZlNxux2DliwnP" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4" data-aos="fade-left" data-aos-anchor-placement="center-bottom" data-aos-easing="ease-in">
+                    <div class="card text-right text-white">
+                        <a data-toggle="collapse" href="#micro" role="button" aria-expanded="false" aria-controls="micro"><img class="card-img-top" src="images/releases/MMEEsmall.jpg" alt=""></a>
+                        <div class="collapse" id="micro">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <a href="#">Micromachine Enzyme Euphoria</a>
+                                </h4>
+                                <p class="card-text">EP <br>Digital released by artist.</p>
+                                <iframe src="https://open.spotify.com/embed/album/7eI07CuaHFwGY6Hj91mlsU" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <hr>
+        <br>
+
+        <!-- VIDEOS -->
+
+        <div class="container flex-center text-center h-100 w-100" id="videos">
+            <div>
+                <iframe style="width: 100%; height: 75vh" src="https://www.youtube.com/embed/videoseries?list=PLiFG3usCcxZiq7unTXKehMap0An5xhpkp" frameborder="0" modestbranding=1>
+                </iframe>
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <div class="container" id="contact">
+
+        <div class="overlay"></div>
+
+        <div class="container h-100">
+            <div class="d-flex h-100 text-center align-items-cente">
+                <div class="w-100">
+
+                    <a href="mailto:vidnas@gmail.com"><img src="images/emailicon.png" height="250px" width="250px"></a>
+                    <a href="https://twitter.com/vid_nas"> <img src="images/twittericon.png" height="250px" width="250px"></a>
+                    <a href="https://vidnas.bandcamp.com"> <img src="images/bandcampicon.png" height="250px" width="250px"></a>
+                    <a href="https://soundcloud.com/vidnas"> <img src="images/soundcloudicon.png" height="250px" width="250px"></a>
+                    <a href="https://open.spotify.com/artist/3M1wNl5SVsirAZPQiMtnWn?si=8zXM8q3MR16rnpDA76ENeA"> <img src="images/spotifyicon.png" height="250px" width="250px"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--    <script src="./js/auto-hiding-bootstrap-navbar.min.js"></script>-->
+
+
+    <script>
+        AOS.init();
+
+    </script>
+</body>
+
+</html>
