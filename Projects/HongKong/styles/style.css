@@ -162,7 +162,7 @@ h1 {
     justify-content: center;
     align-items: center;
     z-index: 2;
-    background-image: url(../images/temple/temple_0000_clouds-bg-min.png);
+    background-image: url(../images/temple/temple_0003_clouds-bg-min.png);
     background-size: cover;
 }
 
@@ -176,7 +176,21 @@ h1 {
     justify-content: center;
     align-items: center;
     z-index: 2;
-    background-image: url(../images/temple/temple_0001_Buildings-small.png);
+    background-image: url(../images/temple/temple_0000_Buildings-min.png);
+    background-size: cover;
+}
+
+#temple-buildings-left {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    background-image: url(../images/temple/temple_0001_mid-buildings-min.png);
     background-size: cover;
 }
 
@@ -190,7 +204,7 @@ h1 {
     justify-content: center;
     align-items: center;
     z-index: 2;
-    background-image: url(../images/temple/temple_0002_Temple-small.png);
+    background-image: url(../images/temple/temple_0002_temple-min.png);
     background-size: cover;
 }
 
