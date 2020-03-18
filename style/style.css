@@ -1,252 +1,384 @@
-html {
-    background-color: lightsteelblue;
+@import url("https://fonts.googleapis.com/css?family=Germania+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Pirata+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+
+* {
+    color: white;
+    font-family: Montserrat;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(../images/knightsbig.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-attachment: fixed;
+    
+
+    /*    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(20,20,20,1) 49%, rgba(0,0,0,1) 100%);*/
 }
 
 h1 {
-    color: white;
-    font-size: 4rem;
+    font-family: "Pirata One";
 }
 
+h2,
+h3 {
+    font-family: "Germania One";
 
+}
 
-/* ====  SKYLINE ====  */
-#skyline {
-    height: 200vh;
-    width: auto;
-    overflow-x: hidden;
+.glow {
+    font-size: 80px;
+    color: black;
     text-align: center;
-    z-index: 1;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 10s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #2a2a2a, 0 0 40px #2a2a2a, 0 0 50px #2a2a2a, 0 0 60px #2a2a2a, 0 0 70px #2a2a2a;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #a8a8a8, 0 0 40px #a8a8a8, 0 0 50px #a8a8a8, 0 0 60px #a8a8a8, 0 0 70px #a8a8a8, 0 0 80px #a8a8a8;
+    }
+}
+
+a {
+    text-decoration: line-through;
+
+}
+
+#splash {
+    background-color: black;
+    background-image: url(../images/cansmall.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 220px;
+    text-shadow: 0 0 15px black;
+}
+
+#splash h1 {
+    position: sticky;
+    font-size: 10em;
+
+}
+
+#splash h2 {
+    font-size: 3em;
+}
+
+#splash h3 {
+    color: black;
+}
+
+#splash h3:hover {
+    color: white;
+    transition-duration: 1s;
+}
+
+.arrow {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-top: 7px solid white;
+    border-right: 7px solid white;
+}
+
+.arrow-bottom {
+    transform: rotate(135deg);
+    padding: 0;
+}
+
+.arrow-bottom:hover {
+    transform: rotate(135deg);
+    padding: 0;
+    border-top: 7px solid black;
+    border-right: 7px solid black;
+    transition-duration: 1s;
+}
+
+#splashscroll {
+    position: absolute;
+    margin-left: 48%;
+    margin-top: 50px;
+}
+
+/* PAGE CONTAINER*/
+
+#pagecontainer {
+/*    box-sizing: border-box;*/
+/*    display: flex;*/
+    margin-top: 2vh;
+    min-height: 500px;
+/*    border: 1px white solid;*/
+    width: 100%;
+    
+}
+
+#logo {
+    opacity:0;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+/* LEFT NAV BOX */
+
+#left-navbox {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: auto;
+    background: black;
+    border-top: grey 1px solid;
+    border-bottom: grey 1px solid;
+    opacity: 80%;
+    text-align: center;
+    z-index: 100;
+/*    margin-top: 0;*/
 }
 
 
-#skylinetitle {
-    z-index: 2;
-    position: fixed;
+
+#left-navbox h2 {
+/*
+    border-bottom: 1px white solid;
+    border-top: 1px white solid;
+*/
+}
+
+.button1 {
+
+    display: inline-block;
+    font-family: "Germania One";
+    text-transform: uppercase;
+    margin: 20px;
+    font-size: 2em;
+    border: none;
+    background: none;
+    cursor: crosshair;
+    transition: 2s ease-in-out;
+    -webkit-transition: all 2s ease-in-out;
+}
+
+.button2 {
+
+    display: inline-block;
+    font-family: "Germania One";
+    text-transform: none;
+    margin-top: 20px;
+    font-size: 2em;
+    border: none;
+    background: none;
+    cursor: crosshair;
+    transition: 2s ease-in-out;
+    -webkit-transition: all 2s ease-in-out;
+    overflow: hidden;
+}
+
+
+#left-navbox .button1:hover {
+
+    font-family: "Germania One";
+    text-transform: uppercase;
+    margin: 20px;
+    opacity: 0%;
+}
+
+.homebutton {
+    float: left;
+    
+    
+}
+
+
+.insetborder {
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+
+.insetborder:hover {
+    box-shadow: inset 0 0 0 5px #2a2a2a;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+
+#right-contentbox {
+    
+    transition-duration: 2s;
+    text-align: center;
+    
+}
+
+.right-content {
+    margin: auto;
+    width: 70%;
+    transition-duration: 2s;
+    text-align: center;
+}
+
+
+
+/* PROJECTS TIMELINE */
+
+#projTimeline {
+    display: flex;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+
+}
+
+.tl-item {
+    position: relative;
+    width: 25%;
+    min-height: 400px;
+    color: #fff;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    margin: 10px;
+    padding: 40px;
+    border: 1px white solid;
+    background-color: black;
+
+}
+
+.tl-item:hover {
+    width: 50%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    min-width: 0px;
+    margin: 0px;
+}
+
+.tl-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center center;
+    transition: all 0.5s ease;
+    filter: grayscale(100%);
+    opacity: 20%;
+
+}
+
+.tl-bg:hover {
+    filter: grayscale(10%);
+    opacity: 50%;
+}
+
+.tl-title {
+    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#skylinetitleoutline {
-    z-index: 6;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#skylinetitle h1 {
-    font-size: 10rem;
-    font-style: italic;
-}
-
-#skylinetitleoutline h1 {
-    font-size: 10rem;
-    font-style: italic;
-    color: rgba(255, 255, 255, 0.6);
-
-}
-
-#skylinebg {
-        
-    width: 100%;
-    height: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    transform: translateX(-50%) translateY(-50%);
     z-index: 1;
-    background-image: url(../images/skyline/HK-skyline_0005_sky-background.png);
-    
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    background-color: black;
 }
 
-#foliage {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 6;
-    background-image: url(../images/skyline/HK-skyline_0000_foliage.png);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#foreground {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 5;
-    background-image: url(../images/skyline/HK-skyline_0001_Foreground-buildings.png);
-    background-size: cover;
-}
-
-#midfore {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 4;
-    background-image: url(../images/skyline/HK-skyline_0002_Mid-Fore-Buildings.png);
-    background-size: cover;
-}
-
-#backfore {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 3;
-    background-image: url(../images/skyline/HK-skyline_0003_back-fore-buildings.png);
-    background-size: cover;
-}
-
-#farsky {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
-    background-image: url(../images/skyline/HK-skyline_0004_Layer-6.png);
-    background-size: cover;
-}
-
-
-/* ==== TEMPLE ==== */
-
-
-#temple {
-    height: 400vh;
-    width: auto;
+/*
+.tl-content {
+  
+  position: relative;
+  margin-top: 100px;
+    padding: 50px;
     text-align: center;
+  opacity: 1;
+  color: white;
+}
+.tl-content:hover {
+  
+  position: relative;
+  text-align: center;
+  opacity: 1;
+  color: white;
+}
+*/
+
+/* PROJECTS EXPANDED */
+
+#projects-big{
+    margin: auto;
+    margin-top: 200px;
+    padding-top: 0px;
+    min-height: 800px;
+    width:100%;
+    background-color: black;
+    background-image: url(../images/cansmall.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    }
+
+.proj-expanded {
+    margin: auto;
+    width: 70%;
+    transition-duration: 2s;
+    text-align: center;
+    padding-left: 30px;
     position: relative;
-    z-index: 10;
-    margin: 0;
-}
-
-#temple-bg {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
-    background-image: url(../images/temple/temple_0003_clouds-bg-min.png);
-    background-size: cover;
-}
-
-#temple-buildings {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
-    background-image: url(../images/temple/temple_0000_Buildings-min.png);
-    background-size: cover;
-}
-
-#temple-buildings-left {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
-    background-image: url(../images/temple/temple_0001_mid-buildings-min.png);
-    background-size: cover;
-}
-
-#temple-temple {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
-    background-image: url(../images/temple/temple_0002_temple-min.png);
-    background-size: cover;
-}
-
-.temple-text {
-    z-index: 10;
-    position: relative;
-    padding: 12vh;
     
 }
 
-.temple-text h2 {
-    font-size: 10rem;
+#pagecontainer img {
+    max-width: 100%;
+    height: auto;
+    border: 1px gray solid;
+}
+
+
+
+.proj-text-box{
+    margin: auto;
+    opacity: 0;
+    border: 2px white solid;
+    background-color: rgba(0, 0, 0, 0.7);    
+    
+    position: absolute;
+    left: 22%;
+    top: 32%;
+    width: 60%;
+    
+    z-index: 100;
+    transition-duration: 05.s;    
+    
+    }
+
+.proj-text-box:hover{
+    opacity:.9;
+}
+
+.proj-content-text{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+}
+
+
+p {
+    text-align: justify;
+}
+
+.content-text {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+}
+
+footer {
+    margin-top: 50px;
+    clear: both;
     color: white;
-    text-shadow: 4px 4px 6px #000000;
 }
-
-/*   ==== NIGHT LIFE ====   */
-
-#nightlife{
-    height: 400vh;
-    width: auto;
-    text-align: center;
-    position: relative;
-    z-index: 10;
-    margin: 0;
-}
-
-#nightlife-bg{
-    width: 100%;
-    height: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    background-image: url(../images/neonwalkSM.jpg);
-    
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat:repeat;
-    background-size: cover;
-}
-
