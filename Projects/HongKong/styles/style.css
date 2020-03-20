@@ -1,3 +1,28 @@
+@font-face {
+    font-family: 'Chinese';
+    src: local('Chinese'), url("../fonts/Chinese.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Dream MMA';
+    src: local('Dream MMA'), url("../fonts/Dream MMA.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Yoruka';
+    src: local('Yoruka'), url("../fonts/Yoruka.otf") format('opentype');
+}
+
+@font-face {
+    font-family: 'Harukaze';
+    src: local('Harukaze'), url("../fonts/Harukaze.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'coolvetica rg';
+    src: local('coolvetica rg'), url("../fonts/coolvetica rg.ttf") format('truetype');
+}
+
 html {
     background-color: lightsteelblue;
 }
@@ -5,6 +30,11 @@ html {
 h1 {
     color: white;
     font-size: 4rem;
+    font-weight: normal;
+}
+
+h2 {
+    font-weight: normal;
 }
 
 
@@ -28,7 +58,7 @@ h1 {
 }
 
 #skylinetitleoutline {
-    z-index: 6;
+    z-index: 1;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -37,18 +67,23 @@ h1 {
 
 #skylinetitle h1 {
     font-size: 10rem;
-    font-style: italic;
+    font-family: Chinese;
+    font-weight: normal;
+
 }
 
 #skylinetitleoutline h1 {
+
     font-size: 10rem;
-    font-style: italic;
     color: rgba(255, 255, 255, 0.6);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-family: Chinese;
+    font-weight: normal;
 
 }
 
 #skylinebg {
-        
+    display: none;
     width: 100%;
     height: 100%;
     position: relative;
@@ -59,7 +94,7 @@ h1 {
     align-items: center;
     z-index: 1;
     background-image: url(../images/skyline/HK-skyline_0005_sky-background.png);
-    
+
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -211,8 +246,7 @@ h1 {
 .temple-text {
     z-index: 10;
     position: relative;
-    padding: 12vh;
-    
+    padding: 10vh;
 }
 
 .temple-text h2 {
@@ -221,32 +255,143 @@ h1 {
     text-shadow: 4px 4px 6px #000000;
 }
 
+#neutral-text h2 {
+    font-family: Yoruka;
+    font-size: 12rem;
+}
+
+#modern-text h2 {
+    font-family: Dream MMA;
+    color: black;
+    text-shadow: 4px 4px 6px #FFFFFF;
+    transition-duration: 500ms;
+}
+
+#modern-text h2:hover {
+    color: rgba(0, 0, 255, 0.5);
+    text-shadow: 4px 4px 6px #FFFFFF;
+}
+
+#ancient-text h2 {
+    font-family: Harukaze;
+    font-size: 20rem;
+    color: red;
+    font-weight: 1000 !important;
+}
+
 /*   ==== NIGHT LIFE ====   */
 
-#nightlife{
-    height: 400vh;
+#neondivider {
+    width: auto;
+    height: auto;
+    position: relative;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    z-index: 100;
+
+}
+
+#neondivider img {
+    height: auto;
+    width: 98vw;
+    margin-top: -125px;
+    margin-bottom: -125px;
+}
+
+#nightlife {
+    height: auto;
     width: auto;
     text-align: center;
     position: relative;
     z-index: 10;
     margin: 0;
-}
-
-#nightlife-bg{
-    width: 100%;
-    height: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    background-image: url(../images/neonwalkSM.jpg);
-    
+    padding-bottom: 6rem;
+    background-image: url(../images/nightlife/nightlifeWIDE-min.png);
     background-attachment: fixed;
     background-position: center;
-    background-repeat:repeat;
+    background-repeat: repeat;
     background-size: cover;
 }
 
+.nightlife-title {
+    z-index: 10;
+    position: relative;
+    padding: 12vh;
+    font-size: 5rem;
+    color: white;
+    text-shadow: -6px -6px 0 #000, 6px -6px 0 #000, -6px 6px 0 #000, 6px 6px 0 #000;
+    font-family: Yoruka;
+    font-weight: normal;
+}
+
+.nightlife-flex {
+    display: flex;
+    z-index: 10;
+    padding: 2rem;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 0;
+    justify-content: center;
+}
+
+.nightlife-flex-div {
+    width: 10rem;
+    height: 10rem;
+    margin: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    line-height: 2rem;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.nightlife-flex-div:hover {
+    overflow: visible;
+}
+
+.nightlife-flex-div-inner {
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: black solid 2px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    transition: all 0.3s ease-in-out;
+    font-size: 1.5rem;
+    font-family: coolvetica rg;
+}
+
+
+.nightlife-flex-div:hover .nightlife-flex-div-inner:hover {
+    z-index: 100;
+    width: 14rem;
+    height: 14rem;
+    border-radius: 0%;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+/*   ===== WEATHER =====    */
+
+
+#weather {
+    height: 150vh;
+    width: auto;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    margin: 0;
+    padding-bottom: 6rem;
+    background-image: url(../images/weather/weather-bg-min.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
