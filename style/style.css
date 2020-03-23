@@ -15,7 +15,7 @@ body {
     background-repeat: no-repeat;
     background-color: black;
     background-attachment: fixed;
-    
+
 
     /*    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(20,20,20,1) 49%, rgba(0,0,0,1) 100%);*/
 }
@@ -50,8 +50,7 @@ h3 {
 }
 
 a {
-    text-decoration: line-through;
-
+    text-decoration: none;
 }
 
 #splash {
@@ -63,8 +62,9 @@ a {
     color: white;
     text-align: center;
     padding-top: 80px;
-    padding-bottom: 220px;
     text-shadow: 0 0 15px black;
+    height: 100vh;
+    width: 98vw;
 }
 
 #splash h1 {
@@ -116,17 +116,13 @@ a {
 /* PAGE CONTAINER*/
 
 #pagecontainer {
-/*    box-sizing: border-box;*/
-/*    display: flex;*/
     margin-top: 2vh;
-    min-height: 500px;
-/*    border: 1px white solid;*/
-    width: 100%;
-    
+    width: 98vw;
+    min-height: 100vh;
 }
 
 #logo {
-    opacity:0;
+    opacity: 0;
     margin-top: 100px;
     margin-bottom: 50px;
 }
@@ -144,20 +140,17 @@ a {
     opacity: 80%;
     text-align: center;
     z-index: 100;
-/*    margin-top: 0;*/
 }
 
 
-
 #left-navbox h2 {
-/*
+    /*
     border-bottom: 1px white solid;
     border-top: 1px white solid;
 */
 }
 
 .button1 {
-
     display: inline-block;
     font-family: "Germania One";
     text-transform: uppercase;
@@ -171,7 +164,6 @@ a {
 }
 
 .button2 {
-
     display: inline-block;
     font-family: "Germania One";
     text-transform: none;
@@ -187,7 +179,6 @@ a {
 
 
 #left-navbox .button1:hover {
-
     font-family: "Germania One";
     text-transform: uppercase;
     margin: 20px;
@@ -196,8 +187,7 @@ a {
 
 .homebutton {
     float: left;
-    
-    
+
 }
 
 
@@ -213,7 +203,6 @@ a {
 }
 
 #right-contentbox {
-    
     transition-duration: 2s;
     text-align: center;
 }
@@ -225,14 +214,7 @@ a {
     text-align: center;
 }
 
-/*
-#about p{
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-}
-*/
-
-.about-flex{
+.about-flex {
     display: flex;
     align-items: center;
 }
@@ -245,7 +227,6 @@ a {
     overflow: auto;
     background-color: rgba(0, 0, 0, 0);
     width: 100%;
-
 }
 
 .tl-item {
@@ -259,7 +240,6 @@ a {
     padding: 40px;
     border: 1px white solid;
     background-color: black;
-
 }
 
 .tl-item:hover {
@@ -321,18 +301,20 @@ a {
 
 /* PROJECTS EXPANDED */
 
-#projects-big{
+#projects-big {
     margin: auto;
     margin-top: 200px;
     padding-top: 0px;
     min-height: 800px;
-    width:100%;
+    height;
+    100vh;
+    width: 98vw;
     background-color: black;
     background-image: url(../images/cansmall.jpg);
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    }
+}
 
 .proj-expanded {
     margin: auto;
@@ -341,38 +323,33 @@ a {
     text-align: center;
     padding-left: 30px;
     position: relative;
-    
+
 }
 
 #pagecontainer img {
-    max-width: 100%;
+    max-width: 98%;
     height: auto;
-    border: 1px gray solid;
+    border: 1px white solid;
 }
 
-
-
-.proj-text-box{
+.proj-text-box {
     margin: auto;
     opacity: 0;
     border: 2px white solid;
-    background-color: rgba(0, 0, 0, 0.7);    
-    
+    background-color: rgba(0, 0, 0, 0.7);
     position: absolute;
     left: 22%;
     top: 32%;
     width: 60%;
-    
     z-index: 100;
-    transition-duration: 05.s;    
-    
-    }
-
-.proj-text-box:hover{
-    opacity:.9;
+    transition-duration: 05.s;
 }
 
-.proj-content-text{
+.proj-text-box:hover {
+    opacity: .9;
+}
+
+.proj-content-text {
     background-color: rgba(0, 0, 0, 0.8);
     padding: 20px;
 }
@@ -396,3 +373,64 @@ footer {
     clear: both;
     color: white;
 }
+
+
+/*---- MEDIA QUERY ----*/
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    #splash h1 {
+        padding-top: 15vh;
+    }
+
+    #pagecontainer h2 {
+        font-size: 4rem;
+    }
+
+    #pagecontainer p {
+        font-size: 2rem;
+    }
+
+    .about-flex {
+        flex-direction: column;
+    }
+
+    #projTimeline {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tl-item {
+        width: 85%;
+        height: 20vh;
+    }
+
+    .tl-item:hover {
+        width: 85%;
+        height: 20vh;
+    }
+
+    .proj-text-box {
+        position: relative;
+        margin: auto;
+        margin-top: 2vh;
+        opacity: 0.9;
+        left: auto;
+        top: auto;
+        width: 99%;
+    }
+
+    .proj-text-box {
+        text-decoration: none !important;
+        font-style: normal;
+    }
+
+    .proj-expanded {
+        overflow: hidden;
+    }
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {}
