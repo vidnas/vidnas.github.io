@@ -216,7 +216,6 @@ a {
     
     transition-duration: 2s;
     text-align: center;
-    
 }
 
 .right-content {
@@ -226,6 +225,17 @@ a {
     text-align: center;
 }
 
+/*
+#about p{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+*/
+
+.about-flex{
+    display: flex;
+    align-items: center;
+}
 
 
 /* PROJECTS TIMELINE */
@@ -375,6 +385,10 @@ p {
 .content-text {
     background-color: rgba(0, 0, 0, 0.8);
     padding: 20px;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    border-bottom: 1px white dashed;
+    border-top: 1px white dashed;
 }
 
 footer {
