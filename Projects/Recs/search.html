@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+    <meta charset="utf-8">
+    <title>Recs</title>
+    <meta name="author" content="Your Name">
+    <meta name="description" content="Example description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" type="image/x-icon" href="" />
+</head>
+
+<body>
+    <img src="images/BRLarge.jpg" id="background">
+    <main>
+        <section id="fullpage">
+            <section id="searchpage">
+                <div id="search">
+                    <input type="text" placeholder="search for a movie" onsubmit="search()" id="userInput">
+                </div>
+
+                <button id="btn1" class="button1">SEARCH</button>
+            </section>
+            <br>
+            <section id="movieinfopage">
+                <div id="logo">
+                    <h1 id="logotitle">Blade Runner</h1>
+                </div>
+
+                <div id="movieinfo">
+
+                    <div class="moviecontent">
+                        <div class="moviecontentLeft" id="infoMain">
+                            <table>
+
+                                <tr>
+                                    <th>Released</th>
+                                    <td id="release_date">1982</td>
+                                </tr>
+                                <tr>
+                                    <th>Director</th>
+                                    <td id="director">Ridley Scott</td>
+                                </tr>
+
+                                <tr>
+                                    <th>Cast</th>
+                                    <td id="stars">Harrison Ford, Sean Young, Rutger Hauer, Daryl Hannah</td>
+                                </tr>
+                                <tr>
+                                    <th>Genres</th>
+                                    <td id="genres">Sci-Fi, Thriller, Drama</td>
+                                </tr>
+                                <tr>
+                                    <th>Plot</th>
+                                    <td id="overview">"In the smog-choked dystopian Los Angeles of 2019, blade runner Rick Deckard is called out of retirement to terminate a quartet of replicants who have escaped to Earth seeking their creator for a way to extend their short life spans."</td>
+                                </tr>
+                                <tr>
+                                    <th>Links</th>
+                                    <td id="imdb"><a href="https://www.imdb.com/title/">IMDB</a></td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="moviecontentLeft" id="reviewsMain">
+                            <table>
+                                <tr>
+                                    <th>Average Rating</th>
+                                    <td id="rating"></td>
+                                </tr>
+                                <tr>
+                                    <th>Random Review</th>
+                                    <td id="review1">
+                                        <p></p>
+                                    </td>
+                                </tr>
+
+                            </table>
+
+                        </div>
+                    </div>
+
+                    <div class="moviecontent" id="posterMain">
+                        <img src="images/BRLarge.jpg" id="poster">
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- ----- SIMILAR MOVIES ------>
+
+            <section id="similarMovies">
+                <h1>Recomendations</h1>
+
+                <div id="similarFlex">
+
+                    <div class="similarContent" id="similar1" onclick="recSearch();">
+                        <div id="similarPoster1">
+                            <img src="images/BRLarge.jpg" width="300" height="auto" id="smallposter">
+                        </div>
+                    </div>
+
+                    <div class="similarContent" id="similar2" onclick="recSearch();">
+                        <div id="similarPoster2">
+                            <img src="images/BRLarge.jpg" width="300" height="auto" id="smallposter">
+                        </div>
+
+                    </div>
+
+                    <div class="similarContent" id="similar3"  onclick="recSearch();">
+                        <div id="similarPoster3">
+                            <img src="images/BRLarge.jpg" width="300" height="auto" id="smallposter">
+                        </div>
+
+                    </div>
+
+                    <div class="similarContent" id="similar4" onclick="recSearch();">
+                        <div id="similarPoster4">
+                            <img src="images/BRLarge.jpg" width="300" height="auto" id="smallposter">
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+
+        </section>
+    </main>
+
+
+    <footer></footer>
+    <script type="text/javascript" src="js/tmdb.js"></script>
+
+</body>
+
+</html>

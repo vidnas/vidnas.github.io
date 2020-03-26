@@ -1,86 +1,48 @@
 <!DOCTYPE html>
-<html lang="en-gb">
+<html lang="">
 
 <head>
-    <meta charset="utf-8">
-    <title>Recs</title>
-    <meta name="author" content="Your Name">
-    <meta name="description" content="Example description">
+    <meta charset="UTF-8">
+    <title>Show Me The Movies!</title>
+    <meta name="maxhf" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="icon" type="image/x-icon" href="" />
+    <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 
-<body>
-<!--    <div id="background" ></div>-->
-   <img src="images/BRLarge.jpg" id="background" width=100% height:auto>
-    <main>
-        <section id="fullpage">
+<body onload="popularBackground();">
 
-            <div id="logo">
-                <h1>Show Me The Movies!</h1>
-            </div>
+<div id="popularbackground-flex">
 
-            <div id="search">
-                <input type="text" placeholder="search for a movie" onsubmit="search()" id="userInput">
-            </div>
+<div id="popularPoster0" class="popbackimagesdiv"><img src="images/BRLarge.jpg" class="popbackimages"></div>
+<div id="popularPoster1" class="popbackimagesdiv"><img src="images/BRLarge.jpg" class="popbackimages"></div>
+<div id="popularPoster2" class="popbackimagesdiv"><img src="images/BRLarge.jpg" class="popbackimages"></div>
+<div id="popularPoster3" class="popbackimagesdiv"><img src="images/BRLarge.jpg" class="popbackimages"></div>
+<div id="popularPoster4" class="popbackimagesdiv"><img src="images/BRLarge.jpg" class="popbackimages"></div>
+<div id="popularPoster5" class="popbackimagesdiv"><img src="images/BRLarge.jpg" class="popbackimages"></div>
+<div id="popularPoster6" class="popbackimagesdiv"><img src="images/BRLarge.jpg" class="popbackimages"></div>
+<div id="popularPoster7" class="popbackimagesdiv"><img src="images/BRLarge.jpg" class="popbackimages"></div>
+<div id="popularPoster8" class="popbackimagesdiv"><img src="images/BRLarge.jpg" class="popbackimages"></div>
+<div id="popularPoster9" class="popbackimagesdiv"><img src="images/BRLarge.jpg" class="popbackimages"></div>
 
-            <button id="btn1" class="button1">GO</button>
+</div>
+  
+    <section id="homepage">
+       
+        <div id="logo">
+            <h1>Show Me The Movies!</h1>
+        </div>
 
-            <br>
-
-
-            <div id="movieinfo">
-
-                <div class="moviecontent">
-                    <table>
-                        <tr>
-                            <th>Title</th>
-                            <td id="title">Blade Runner</td>
-                        </tr>
-                        <tr>
-                            <th>Released</th>
-                            <td id="release_date">1982</td>
-                        </tr>
-                        <tr>
-                            <th>Director</th>
-                            <td id="director">Ridley Scott</td>
-                        </tr>
-                      
-                        <tr>
-                            <th>Cast</th>
-                            <td id="stars">Harrison Ford, Sean Young, Rutger Hauer, Daryl Hannah</td>
-                        </tr>
-                        <tr>
-                            <th>Genres</th>
-                            <td  id="genres">Sci-Fi, Thriller, Drama</td>
-                        </tr>
-                        <tr>
-                            <th>Plot</th>
-                            <td id="overview">"In the smog-choked dystopian Los Angeles of 2019, blade runner Rick Deckard is called out of retirement to terminate a quartet of replicants who have escaped to Earth seeking their creator for a way to extend their short life spans."</td>
-                        </tr>
-                        <tr>
-                            <th>Links</th>
-                            <td id="imdb"></td>
-                        </tr>
-                    </table>
-                </div>
-
-                <div class="moviecontent" id="trailer">
-                    <img src="images/BRLarge.jpg" width="320" height="auto" id="poster">
-                </div>
-
-            </div>
+        <div id="homepagetext">
+            <p>A simplified movie search engine that quickly shows you key information and recommendations</p>
+        </div>
+        <center>
+        <a href="search.html"><h2>Get Searching!</h2></a>
+        </center>
+    </section>
 
 
 
-
-        </section>
-    </main>
-
-
-    <footer></footer>
-    <script type="text/javascript" src="js/tmdb.js"></script>
+<script type="text/javascript" src="js/home.js"></script>
 
 </body>
 
