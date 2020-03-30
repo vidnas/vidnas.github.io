@@ -1,7 +1,7 @@
 function completeSearch() {
 
     var movieFirst = movieSearch();
-    var movieSimilar = movieSearchSimilar();
+    var movieSimilar = movieSearchSimilar(movieFirst);
 
 }
 
@@ -22,7 +22,7 @@ function movieSearch() {
 
         var movieFirst = JSON.parse(this.response);
 
-        document.getElementById("logo").innerHTML = '<h1>' + movieFirst.results[0].title; + '</h1>';
+        document.getElementById("logo").innerHTML = '<h1 id="logotitle">' + movieFirst.results[0].title; + '</h1>';
 
         document.getElementById("release_date").innerHTML = movieFirst.results[0].release_date;
         document.getElementById("overview").innerHTML = movieFirst.results[0].overview;
@@ -190,7 +190,7 @@ function recSearch(movieSimilar) {
         console.log(recUserInput);   
         
 
-        document.getElementById("logo").innerHTML = '<h1>' + movieFirst.results[0].title; + '</h1>';
+        document.getElementById("logo").innerHTML = '<h1 id="logotitle">' + movieFirst.results[0].title; + '</h1>';
 
         document.getElementById("release_date").innerHTML = movieFirst.results[0].release_date;
         document.getElementById("overview").innerHTML = movieFirst.results[0].overview;
@@ -221,7 +221,8 @@ document.getElementById("btn1").addEventListener("click", searchScroll);
 var userInput = document.getElementById("userInput");
 userInput.addEventListener("keydown", function (e) {
     if (e.keyCode === 13) {
-        completeSearch(e), searchScroll(e);
+        completeSearch(e); 
+        searchScroll(e);
     }
 });
 
