@@ -128,7 +128,7 @@ h2 {
 
 #logo h1 {
     font-size: 6em;
-    padding-top:1rem;
+    padding-top: 1rem;
 }
 
 #searchpage {
@@ -186,9 +186,12 @@ h2 {
 table tr,
 th,
 td {
-    /*    border: grey 1px solid;*/
     padding: 5px;
     text-align: justify;
+}
+
+ table th{
+    vertical-align: text-top;
 }
 
 #posterMain {
@@ -209,9 +212,18 @@ td {
 }
 
 #reviewsMain {
+    height: 42vh;
     margin-top: 2rem;
     border: grey 1px solid;
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    
+}
+
+#review1{
+    max-height: 25vh;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:normal;
 }
 
 /*---- SIMILAR MOVIES ----*/
