@@ -1,7 +1,6 @@
 function completeSearch() {
 
     var movieFirst = movieSearch();
-    var movieSimilar = movieSearchSimilar(movieFirst);
 
 }
 
@@ -119,6 +118,9 @@ function movieSearchSimilar(movieFirst) {
 }
 
 
+var similarMovie = movieSearchSimilar();
+
+
 //---- FOURTH API REQUEST - REVIEWS ----//
 
 function movieReviews(movieFirst) {
@@ -171,10 +173,10 @@ function movieIMDB(movieFirst) {
 
 // ----- SIXTH recommendations links ----- //
 
-function recSearch(movieSimilar) {
+function recSearch(recNum) {
     
     
-    var recUserInput = movieSimilar.results[0].title;
+    var recUserInput = similarMovie.results[recNum].title;
     
     var url = 'https://api.themoviedb.org/3/search/movie?api_key=898c53e4648c8d01605385c636421936&query=' + recUserInput;
 
