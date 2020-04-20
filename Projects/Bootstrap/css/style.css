@@ -7,12 +7,9 @@
     src: local('VCR OSD Mono'), url("../fonts/VCR_OSD_MONO_1.001[1].woff") format('woff');
 }
 
-. {
-    
-}
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -23,28 +20,33 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-/* LOADER */
+#overflow-x {
+    position: relative;
+    overflow-x: hidden;
+}
 
+
+/* LOADER */
 .loader-wrapper {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: black;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 100;
-  background-image: url(../images/loadingcompressed.gif);
-  background-size: cover;  
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    background-image: url(../images/loadingcompressed.gif);
+    background-size: cover;
 }
 
 
 /* NAV */
-
 .navbar {
     background-color: rgba(0, 0, 0, 0);
+    width: 15% !important;
 }
 
 .nav-link,
@@ -58,6 +60,8 @@ body::-webkit-scrollbar {
     padding: 2rem;
     font-family: "VCR OSD Mono";
     font-size: 2rem;
+    background: #202020;
+
 }
 
 .nav-link:hover {
@@ -74,16 +78,14 @@ body::-webkit-scrollbar {
 
 .navbar-toggler {
     margin-top: 1rem;
-    
+
     padding: 0.5rem;
     font-family: "VCR OSD Mono";
     font-size: 2rem;
 }
 
 
-
 /* HEADER */
-
 header {
     position: relative;
     background-color: black;
@@ -108,6 +110,9 @@ header video {
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
+    margin: 0;
+    padding: 0;
+
 
 }
 
@@ -127,19 +132,20 @@ header .overlay {
     z-index: 3;
 }
 
-/* ABOUT */
 
+/* ABOUT */
 #about {
+    height:100vh;
+    width: 100vw;
     position: relative;
     z-index: 1;
+    
 }
 
 #about video {
     position: fixed;
     top: 50%;
     left: 50%;
-    min-width: 100%;
-    min-height: 100%;
     width: auto;
     height: auto;
     z-index: 1;
@@ -147,7 +153,6 @@ header .overlay {
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-
 }
 
 #about h1 {
@@ -156,60 +161,65 @@ header .overlay {
     z-index: 1;
     font-family: "VCR OSD Mono";
 }
+
 #about p {
     position: relative;
     z-index: 1;
     font-family: "VCR OSD Mono";
-    padding:3rem;
-    color: blue;    
+    padding: 3rem;
+    color: blue;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-#about p:hover{
+#about p:hover {
     cursor: crosshair;
 }
 
-#big-title-text{
+#big-title-text {
     display: block;
 }
 
-#small-about-text{
-    display: none;
+#small-about-text {
+    display: block;
 }
 
 
 /* CARDS and CONTENT */
-
-.card{
-    background-color: rgba(0,0,0,0.8) !important;
+.card {
+    background-color: rgba(0, 0, 0, 0.8) !important;
 }
 
-#content-background, #videos h1 {
-    padding-top: 8rem;
+#content-background,
+#videos, #contact h1 {
+    padding-top: 10rem;
     position: relative;
     z-index: 1;
     font-family: "VCR OSD Mono";
-    
+    color: blue;
+    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+
 }
-#content-background, #videos p {
+
+#content-background,
+#videos, #contact p {
     position: relative;
     z-index: 1;
     font-family: "VCR OSD Mono";
-    padding:3rem;
-    color: blue;    
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    padding: 3rem;
+    color: blue;
+    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
 #releases,
 #videos {
     z-index: 2;
-    position: relative;    
+    position: relative;
     padding: 2rem;
-    border: solid white;
+    /*    border: solid white;*/
 }
 
 #videos iframe {
-    padding:2rem;
+    padding: 2rem;
 }
 
 #content-background {
@@ -218,7 +228,7 @@ header .overlay {
     position: relative;
     z-index: 2;
     height: auto;
-    width: 100vmax;
+    width: 100vw;
     background-image: url("../images/HKbg.jpg") !important;
     background-color: black;
     background-attachment: fixed;
@@ -226,55 +236,124 @@ header .overlay {
     background-size: cover;
 }
 
-/* CONTACT */
 
+/* CONTACT */
 #contact {
-    padding: 10rem;
+    padding: 0;
+/*    margin-top: 8rem;*/
     position: relative;
     z-index: 2;
+    width: 100vw;
+    height: 100vh;
 }
 
 #contact ul {
-    list-style-type:none;
+    list-style-type: none;
 }
 
 #contact a {
-    background-color: rgba(0,0,0,0.8);
+    padding: 0.5rem;
 }
 
 #contact img {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 50%;
 }
 
 #contact img:hover {
-    background-color: rgba(0,0,255,0.8);
+    background-color: rgba(0, 0, 255, 0.8);
     border-radius: 50%;
     transition: 0.3s;
 }
 
+#contact h1{
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+}
+
+
+
 /* MEDIA QUERY */
 
+/* Small devices (portrait phones, 576px and up) */
 
-/*/ Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) { ... }
-
-/*Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) { ... }
-
-/*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) { ... }
-
-/*Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) { ... }
+@media (max-width: 575.98px) {
 
 
+    .loader-wrapper {
+        width: 100vw;
+        height: 100vh;
+        align-content: center;
+    }
+
+    header .overlay {
+        height: 100vh;
+        width: auto;
+    }
+
+    header {
+        height: 100vh;
+        width: auto;
+    }
+
+    #headercontainer {
+        padding: 0;
+    }
+
+    #about {
+        height: 100vh;
+    }
+
+    #about video {
+        overflow-x: hidden;
+    }
+
+    #about h1 {
+        padding-top: 8rem;
+        font-size: 3rem;
+    }
+
+    #about p {
+        padding-bottom: 3rem;
+        font-size: 2rem;
+    }
+
+    #small-about-text h1 {
+        font-size: 1.5rem;
+    }
+
+    #releases {
+        width: 90vw;
+        padding: 0;
+    }
+
+    #contact a {
+        padding-left: 20vw;
+    }
+
+}
+
+@media (max-width: 400px) {
+    #about {
+        height: 150vh;
+    }
+    
+    #about h1 {
+        font-size: 2rem;
+    }
+}
+
+
+/*
 @media (pointer: coarse) and (hover: none) {
     header {
         background: url("/images/background.png") black no-repeat center center scroll;
     }
 
+*/
+/*
     header video {
         display: none;
     }
+*/
 }
