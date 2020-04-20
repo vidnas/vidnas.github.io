@@ -2,6 +2,8 @@
 <html lang="">
 
 <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
     <meta charset="UTF-8">
     <title>/// vid.nas ///</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -12,8 +14,10 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
+   <div id="overflow-x">
+   
     <!-- LOADER -->
-    <div class="loader-wrapper"></div>
+<!--   <div class="loader-wrapper align-items-center"></div>-->
 
     <!-- HEADER -->
     <header class="header">
@@ -21,7 +25,7 @@
         <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
             <source src="videos/PDbgBLUE.mp4" type="video/mp4">
         </video>
-        <div class="container h-100 w-100">
+        <div class="container h-100 w-100" id="headercontainer">
             <div class="d-flex h-100 text-center align-items-center">
                 <div class="w-100 text-white">
 
@@ -49,7 +53,7 @@
                     <a class="nav-link " data-value="releases" href="#releases">AUDIO</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " data-value="blog" href="#videos">VIDEO</a> </li>
+                    <a class="nav-link " data-value="blog" href="#visual">VISUAL</a> </li>
                 <li class="nav-item">
                     <a class="nav-link " data-value="contact" href="#contact">COMMS</a> </li>
             </ul>
@@ -57,11 +61,10 @@
     </nav>
 
     <!-- ABOUT -->
-
     <div class="container" id="about">
 
         <div class="overlay"></div>
-        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="overflow-hidden">
             <source src="videos/HKsmall.mp4" type="video/mp4">
         </video>
         <div class="container h-100 w-100 align-items-center justify-content-center">
@@ -69,7 +72,7 @@
 
                 <div class="w-100 text-white" id="big-title-text">
 
-                    <h1 class="display-1">VISIONS <br> of the <br> FUTURE <br> found on <br> DISCARDED VHS</h1>
+                    <h1 class="display-4">VISIONS <br> of the <br> FUTURE <br> found on <br> DISCARDED VHS</h1>
 
                     <p class="display-4" role="button" onclick="replace('big-title-text', 'small-about-text')">more</p>
 
@@ -77,11 +80,11 @@
                 </div>
 
                 <div class="w-100 text-white" id="small-about-text">
-                    <h1 class="display-4">
+                    <h1 class="display-5">
                         vid.nas is an audio/visual project inspired by cyberpunk dystopias depicted in 80s Sci-Fi films and anime.<br><br> Melancholic, densely layered and emotive synthesised music.
                     </h1>
 
-                    <p class="display-4" role="button" onclick="replace('small-about-text', 'big-title-text')" style="padding-top:6rem;">back</p>
+                    <p class="display-4" role="button" onclick="replace('small-about-text', 'big-title-text')">back</p>
 
                 </div>
 
@@ -90,19 +93,17 @@
         </div>
 
     </div>
-
+    
     <!-- RELEASES -->
-
     <hr>
-
     <section id="content-background">
 
 
-        <div class="container" id="releases">
+        <div class="container w-100" id="releases">
             
               <center> 
               <h1 class="display-4"> AUDIO </h1>
-               <p class="display-4"> click artwork </p> 
+               <p class="display-5"> click artwork </p> 
                 </center>
                 
             <div class="row">
@@ -207,14 +208,18 @@
 
         <hr>
         <br>
+        
+         <center> 
+              <h1 class="display-4" id="visual"> VISUAL </h1>
+        </center>
 
         <!-- VIDEOS -->
 
-        <div class="container flex-center text-center h-100 w-100" id="videos">
-            <div>
-                <iframe style="width: 100%; height: 75vh" src="https://www.youtube.com/embed/videoseries?list=PLiFG3usCcxZiq7unTXKehMap0An5xhpkp" frameborder="0" modestbranding=1>
+        <div class="container d-flex justify-content-center h-100 w-100" id="videos">
+<!--            <div>-->
+                <iframe style="min-width: 80vw; height: 80vh" src="https://www.youtube.com/embed/videoseries?list=PLiFG3usCcxZiq7unTXKehMap0An5xhpkp" frameborder="0" modestbranding=1>
                 </iframe>
-            </div>
+<!--            </div>-->
 
 
 
@@ -223,23 +228,26 @@
     </section>
 
     <!-- CONTACT -->
-
-    <div class="container" id="contact">
+    <div class="container w-100" id="contact">
+        
+        <center> 
+              <h1 class="display-4"> COMMS </h1>
+        </center>
 
         <div class="overlay"></div>
 
-        <div class="container h-100">
-            <div class="d-flex h-100 text-center align-items-cente">
-                <div class="w-100">
+<!--        <div class="container h-100">-->
+            <div class="d-flex justify-content-center flex-sm-row flex-column">
 
                     <a href="mailto:vidnas@gmail.com"><img src="images/emailicon.png" height="250px" width="250px"></a>
                     <a href="https://twitter.com/vid_nas"> <img src="images/twittericon.png" height="250px" width="250px"></a>
                     <a href="https://vidnas.bandcamp.com"> <img src="images/bandcampicon.png" height="250px" width="250px"></a>
+                
                     <a href="https://soundcloud.com/vidnas"> <img src="images/soundcloudicon.png" height="250px" width="250px"></a>
                     <a href="https://open.spotify.com/artist/3M1wNl5SVsirAZPQiMtnWn?si=8zXM8q3MR16rnpDA76ENeA"> <img src="images/spotifyicon.png" height="250px" width="250px"></a>
-                </div>
+                
             </div>
-        </div>
+<!--        </div>-->
     </div>
 
 
@@ -256,6 +264,8 @@
         AOS.init();
 
     </script>
+    
+    </div>
 </body>
 
 </html>
