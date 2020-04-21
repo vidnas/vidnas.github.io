@@ -12,6 +12,7 @@ body {
     background-color: black;
     color: white;
     font-family: "Roboto";
+    overflow-x: hidden
 }
 
 main {
@@ -44,41 +45,45 @@ h2 {
 
 /*---- HOME PAGE ----*/
 
-#homepage {}
+#homepage {
+    margin: 0;
+}
 
 #homepagetext {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.8);
     padding: 0.5rem;
+    margin-top: 10rem;
     margin-bottom: 5rem;
-    position: absolute;
-    top: 40vh;
+    position: relative;
     width: 98.5vw;
     margin: 0;
-
 }
 
-#homepage a {
+#homepageLink {
     text-decoration: underline;
     color: white;
     font-size: 2rem;
     background: rgba(0, 0, 0, 0.4);
-    position: absolute;
-    left: 35vw;
-    right: 35vw;
-    top: 60vh;
+    position: relative;
     border: grey 2px solid;
 
+    margin: 6rem auto;
+    padding: 3rem;
+
+    width: 20vw;
+
+    font-family: "Overpass";
+    font-style: italic;
+    font-weight: bolder;
+    text-shadow: 2px 2px #000000;
 }
 
 #homepage h1 {
-    position: absolute;
-    left: 20vw;
-    right: 20vw;
-    top: 2vh;
+    position: relative;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
-
-
 
 #popularbackground-flex {
     display: flex;
@@ -100,13 +105,12 @@ h2 {
 
 #background {
     opacity: 0.5;
-    position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: 1;
-    width: 98vw;
+    width: 100vw;
     height: auto;
     object-fit: contain;
     position: fixed;
@@ -137,9 +141,11 @@ h2 {
 
 #search input[type=text] {
     margin-top: 45vh;
+    margin-left: -1vw;
+    
     color: white;
     text-align: center;
-    width: 99%;
+    width: 100vw;
     padding: 10px;
     border: none;
     font-size: 2em;
@@ -190,7 +196,7 @@ td {
     text-align: justify;
 }
 
- table th{
+table th {
     vertical-align: text-top;
 }
 
@@ -212,18 +218,18 @@ td {
 }
 
 #reviewsMain {
-    height: 42vh;
+    max-height: 42.5vh;
     margin-top: 2rem;
     border: grey 1px solid;
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
-    
+
 }
 
-#review1{
-    max-height: 25vh;
+#review1 {
+    max-height: 30vh;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space:normal;
+    white-space: normal;
 }
 
 /*---- SIMILAR MOVIES ----*/
@@ -235,7 +241,7 @@ td {
 }
 
 #similarMovies h1 {
-    padding: 2vh;
+    padding: 1vh;
     padding-top: 10vh;
     font-size: 6rem;
 }
@@ -248,18 +254,23 @@ td {
     display: flex;
     align-content: center;
     justify-content: center;
-    margin-top: 8vh;
+    margin-top: 4vh;
+    margin-bottom: 8vh;
 }
 
 .similarContent {
+    box-sizing: content-box;
+    display: block;
+    float: none;
+    line-height: normal;
 
-    margin: 1vw;
+    margin: 0.5rem;
+    padding: 1rem;
     border: grey 1px solid;
-    width: 20%;
+    width: auto;
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
     margin-top: 0;
     text-align: center;
-
 }
 
 .similarContent tr td {
@@ -267,6 +278,58 @@ td {
     vertical-align: middle;
 }
 
-#smallposter {
+.smallposter {
     padding: 0.5rem;
 }
+
+
+/* MEDIA QUERY */
+
+/* Small devices (portrait phones, 576px and up) */
+
+@media (max-width: 575.98px) {
+
+    #logo h1 {
+        font-size: 4rem;
+    }
+
+    #similarMovies h1 {
+        font-size: 3rem;
+    }
+
+    #background {
+        -webkit-backface-visibility: hidden;
+        height: 100vh;
+        width: auto;
+        object-fit: cover;
+      margin-left: -100%;
+    }
+
+    #search input[type=text] {
+        margin-top: 35vh;
+    }
+
+    #movieinfo {
+        display: block;
+    }
+
+    .moviecontent {
+        display: block;
+        width: 100%;
+        margin:5vw;        
+    }
+
+    .moviecontentLeft {
+        width: 85vw;
+    }
+
+    #similarFlex {
+        display: block;
+    }
+
+}
+
+
+
+
+@media (max-width: 400px) {}
