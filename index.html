@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="">
 
 
@@ -17,8 +16,8 @@
 
     <section id="splash">
 
-        <h1 data-aos="fade" data-aos-duration="2000">MAX HOPKINS - FAGAN</h1>
-        <h2 data-aos="fade" data-aos-duration="2000" data-aos-delay="800">junior web designer and front end developer</h2>
+        <h1 data-aos="fade" data-aos-duration="1500">MAX HOPKINS - FAGAN</h1>
+        <h2 data-aos="fade" data-aos-duration="1500">junior front end developer</h2>
 
         <div id="splashscroll">
             <a href=#left-navbox><span class="arrow arrow-bottom"></span></a>
@@ -46,16 +45,47 @@
 
 
             <div id="right-contentbox" data-aos="fade">
-                 <div id="about" style="display:yes" class="right-content">
+                <div id="about" style="display:yes" class="right-content">
                     <h2>About Me</h2>
                     <div class="about-flex">
-                    <img src="/images/personal.png"> 
-                    <p class="content-text">I am a junior web designer and front end developer. I have a passion for minimalist dark themes, music production and creative projects. </p>
+                        <img src="images/personal.png" id="about-image">
+                        <p class="content-text">I am a junior web designer and front end developer. I have a passion for minimalist dark themes, music production and creative projects. </p>
                     </div>
                 </div>
                 <div id="experience" style="display:none" class="right-content">
                     <h2>Experience</h2>
-                    <p class="content-text"> He's fine. (He runs off.) Hey, did you just take his wallet? He just took that guy's wallet! (Lyon Estates) (v.o) Doc, success, I got it! Thank goodness. (w.t) Great Marty, as soon as I reload the fusion generator, I'll meet you on the roof of the high school gym.Kids, we're gonna have to eat this cake by ourselves, Uncle Joey didn't make parole again. I think it would be nice, if you all dropped him a line. Uncle Jailbird Joey? He's your brother, Mom. Yeah, I think it's a major embarrassment having an uncle in prison. We all make mistakes in life, children.Here you go, lady. There's a quarter. (drops a quarter into her collection tin.) Thank you, don't forget to take a flyer. Right. (walks off) Save the clock tower. Where were we?</p>
+                    <div class="timeline">
+
+                        <div class="container left">
+                            <div class="content">
+                                <h2>2017</h2>
+                                <p>Lorem ipsum..</p>
+                            </div>
+                        </div>
+
+                        <div class="container right">
+                            <div class="content">
+                                <h2>2016</h2>
+                                <p>Lorem ipsum..</p>
+                            </div>
+                        </div>
+
+                        <div class="container left">
+                            <div class="content">
+                                <h2>2017</h2>
+                                <p>Lorem ipsum..</p>
+                            </div>
+                        </div>
+
+                        <div class="container right">
+                            <div class="content">
+                                <h2>2016</h2>
+                                <p>Lorem ipsum..</p>
+                            </div>
+                        </div>
+
+
+                    </div>
                 </div>
                 <div id="projects" style="display:none" class="right-content">
                     <h2>Selected Projects</h2>
@@ -105,7 +135,31 @@
                 </div>
                 <div id="contact" style="display:none" class="right-content">
                     <h2>Contact</h2>
-                    <p class="content-text"> Here...(He slides a gun across the table.) 8... I already got a gun. (He passes it back to the man.) 9... (Marty looks at everyone around him and each and every one of them returns the wide-eyed, silent gaze.)Hey, hey, thanks. Of course, you understand that if you lose...I'm taking it back. (He smiles and walks away.) (Marty stares after the gun salesman dumbfounded.) Thanks again. (Marty walks the other direction and runs into Maggie and Seamus. Maggie is carrying William. They continue along together.)(There is a huge explosion. Clara nearly falls off the train. Her dress gets caught and that's the only reason she doesn't fall. She's hanging upside down.) Whoa!! Emmett! Clara! Hold on! I can't! (She screams in desperation as her dress begins to rip.)</p>
+
+                    <center>
+                        <div class="form-container">
+                            <form action="https://formspree.io/xeqlbyoo" class="submitForm">
+
+
+                                <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+
+                                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                                <input type="text" id="email" name="email" placeholder="Email address..">
+
+                                <input type="text" id="phnumb" name="phone-number" placeholder="Phone number..">
+
+
+
+
+                                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                                <input type="submit" value="Submit">
+
+                            </form>
+                        </div>
+                    </center>
+
                 </div>
             </div>
         </div>
@@ -131,28 +185,30 @@
             <div id="bloody" style="display:none" class="proj-expanded">
                 <h2>Movie Search</h2>
                 <a href="./Projects/Recs/index.html">
-                <img src="images/movies-big.png">
-                
+                    <img src="images/movies-big.png" class="proj-img">
+
                     <div class="proj-text-box">
-                       <br>
-                        <p class="proj-content-text"> A movie search website using coded in HTML, CSS and vanilla Javascript, calling data from themoviedb API
                         <br>
-                        <center>click for full site</center></p>
+                        <p class="proj-content-text"> A movie search website using coded in HTML, CSS and vanilla Javascript, calling data from themoviedb API
+                            <br>
+                            <center>click for full site</center>
+                        </p>
                     </div>
                 </a>
             </div>
 
             <div id="bootstrap" style="display:none" class="proj-expanded">
                 <h2>Travel Site</h2>
-                
+
                 <a href="./Projects/HongKong/index.html">
-                <img src="images/hk-big.png">
-                
+                    <img src="images/hk-big.png" class="proj-img">
+
                     <div class="proj-text-box">
-                       <br>
-                        <p class="proj-content-text"> A mock tourism website advertising Hong Kong as a travel destination.  Built using graphical and photo elements created by myself.  Animations built with the AOS Javascript framework, everything else built with HTML5, CSS3 and vanilla JS.
                         <br>
-                        <center>click for full site</center></p>
+                        <p class="proj-content-text"> A mock tourism website advertising Hong Kong as a travel destination. Built using graphical and photo elements created by myself. Animations built with the AOS Javascript framework, everything else built with HTML5, CSS3 and vanilla JS.
+                            <br>
+                            <center>click for full site</center>
+                        </p>
                     </div>
                 </a>
             </div>
@@ -160,26 +216,28 @@
             <div id="vidnas" style="display:none" class="proj-expanded">
                 <h2>Music Producer</h2>
                 <a href="./Projects/Bootstrap/index.html">
-                <img src="images/vidnas-big.png">
-                
+                    <img src="images/vidnas-big.png" class="proj-img">
+
                     <div class="proj-text-box">
-                       <br>
-                        <p class="proj-content-text"> A website built to advetise the work of a music producer.  Built using Bootstrap4 for layout, everything else built with HTML5, CSS3 and vanilla JS.  All theming, graphic, photographic and video elements created by myself
                         <br>
-                        <center>click for full site</center></p>
+                        <p class="proj-content-text"> A website built to advetise the work of a music producer. Built using Bootstrap4 for layout, everything else built with HTML5, CSS3 and vanilla JS. All theming, graphic, photographic and video elements created by myself
+                            <br>
+                            <center>click for full site</center>
+                        </p>
                     </div>
                 </a>
             </div>
             <div id="js-game" style="display:none" class="proj-expanded">
                 <h2>JS Game</h2>
                 <a href="">
-                <img src="images/js-big.png">
-                
+                    <img src="images/js-big.png" class="proj-img">
+
                     <div class="proj-text-box">
-                       <br>
-                        <p class="proj-content-text"> Here...(He slides a gun across the table.) 8... I already got a gun. (He passes it back to the man.) 9... (Marty looks at everyone around him and each and every one of them returns the wide-eyed, silent gaze.)Hey, hey, thanks. Of course, you understand that if you lose...I'm taking it back. (He smiles and walks away.) (Marty stares after the gun salesman dumbfounded.) Thanks again. (Marty walks the other direction and runs into Maggie and Seamus. Maggie is carrying William. They continue along together.)(There is a huge explosion. Clara nearly falls off the train. Her dress gets caught and that's the only reason she doesn't fall. She's hanging upside down.) Whoa!! Emmett! Clara! Hold on! I can't! (She screams in desperation as her dress begins to rip.)
                         <br>
-                        <center>click for full site</center></p>
+                        <p class="proj-content-text"> Here...(He slides a gun across the table.) 8... I already got a gun. (He passes it back to the man.) 9... (Marty looks at everyone around him and each and every one of them returns the wide-eyed, silent gaze.)Hey, hey, thanks. Of course, you understand that if you lose...I'm taking it back. (He smiles and walks away.) (Marty stares after the gun salesman dumbfounded.) Thanks again. (Marty walks the other direction and runs into Maggie and Seamus. Maggie is carrying William. They continue along together.)(There is a huge explosion. Clara nearly falls off the train. Her dress gets caught and that's the only reason she doesn't fall. She's hanging upside down.) Whoa!! Emmett! Clara! Hold on! I can't! (She screams in desperation as her dress begins to rip.)
+                            <br>
+                            <center>click for full site</center>
+                        </p>
                     </div>
                 </a>
             </div>
