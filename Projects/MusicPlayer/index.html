@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Music Player</title>
+    <link rel="icon" type="image/x-icon" href="" />
+
+    <meta name="author" content="MHF">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link id="layout-css-sheet" rel="stylesheet" href="./css/layout.css">
+    <link id="css-sheet" rel="stylesheet" href="./css/light.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header></header>
+
+    <main>
+
+        <button class="style-btn" id="lightmode-btn" onclick="styleSwapLight()">Dark Mode</button>
+        <button class="style-btn" id="darkmode-btn" onclick="styleSwapDark()">Light Mode</button>
+
+        <div id="middle-content-flex">
+
+            <div class="logo-text" id="logo-left">MUSIC</div>
+
+            <section id="player-bg">
+
+                <div class="audio-player-cont">
+
+                    <div class="artwork">
+                        <img src="./mp3/cover.jpg" width=auto height=300px />
+                    </div>
+
+                    <div class="player">
+                        <div id="songTitle" class="song-title">Song title</div>
+                        <input id="songSlider" class="song-slider" type="range" min="0" step="1" onchange="seekSong()" />
+                        <div>
+                            <div id="currentTime" class="current-time">00:00</div>
+                            <div id="duration" class="duration">00:00</div>
+                        </div>
+
+                        <div class="controllers">
+
+                            <img src="images/small-previous.png" width="25px" onclick="previous();" />
+                            <img src="images/play.png" width="40px" onclick="playOrPauseSong(this);" />
+                            <img src="images/small-next.png" width="25px" onclick="next();" />
+
+                        </div>
+                        <div id="nextSongTitle" class="song-title"><b>Next Song :</b>Next song title</div>
+                    </div>
+                </div>
+
+            </section>
+
+            <div class="logo-text" id="logo-right">PLAYER</div>
+
+        </div>
+
+        <script type="text/javascript" src="js/player.js"></script>
+        <script type="text/javascript" src="js/style-swtich.js"></script>
+
+
+    </main>
+
+    <footer></footer>
+
+</body>
+
+</html>

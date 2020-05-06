@@ -1,0 +1,187 @@
+body {
+    height: 100vh;
+    position: static;
+    overflow-y: hidden;
+}
+
+#middle-content-flex {
+    display: flex;
+    position: relative;
+}
+
+#player-bg {
+    display: table;
+    position: relative;
+    height: 90vh;
+    width: 40vw;
+    margin: auto;
+    top: 3vh;
+    z-index: 3;
+    border-radius: 50px;
+}
+
+/*STYLE SWITCH BUTTON*/
+.style-btn {
+    position: absolute;
+    padding: 10px;
+    vertical-align: middle;
+    margin-right: 2px;
+    border-radius: 50px;
+    border: 0;
+    z-index: 100;
+    font-family:'Jost';
+}
+
+.style-btn:focus {
+    outline: none;
+}
+
+/*LOGO TEXT*/
+.logo-text {
+    margin: auto;
+    font-size: 10rem;
+    font-family: 'Jost';
+    font-weight: bolder;
+}
+
+#logo-left {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
+
+#logo-right {
+    writing-mode: vertical-rl;
+}
+
+/*PLAYER*/
+.audio-player-cont {
+    display: table-cell;
+    position: relative;
+    margin: auto;
+    vertical-align: middle;
+    width: 40vw;
+    height: 60vh;
+    font-size: 1rem;
+    font-family: 'Jost';
+    border-radius: 80px;
+}
+
+.player {
+    display: table;
+    position: relative;
+    margin: auto;
+    margin-top: 2vh;
+    padding: 15px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+/*ARTWORK*/
+.artwork {
+    display: table;
+    position: relative;
+    margin: auto;
+    height: 350px;
+    width: 350px;
+    border-radius: 50px;
+}
+
+.artwork img {
+    display: table;
+    border-radius: 50px;
+    margin: auto;
+    margin-top: 25px;
+    padding: auto;
+}
+
+/*SONG INFO*/
+.song-title {
+    width: 100%;
+    padding: 5px 0px 5px 0px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.song-slider {
+    padding: 10px;
+    width: 300px;
+    background: none;
+}
+
+/*PROGRESS SLIDER*/
+input[type=range] {
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 4px;
+    border-radius: 0%;
+    margin-top: -4px;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range] {
+    width: 300px;
+}
+
+input[type=range]::-moz-range-track {
+    width: 300px;
+    height: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-moz-range-thumb {
+    border: none;
+    height: 16px;
+    width: 4px;
+}
+
+input[type=range]:-moz-focusring {
+    outline: 1px solid white;
+    outline-offset: -1px;
+}
+
+/*CURRENT TIME and DURATION*/
+.current-time {
+    float: left;
+    font-size: 10px;
+}
+
+.duration {
+    float: right;
+    font-size: 10px;
+}
+
+/*BUTTONS AND CONTROLS*/
+.controllers {
+    clear: both;
+    display: table;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.controllers * {
+    padding: 10px;
+    vertical-align: middle;
+    margin-right: 2px;
+    border-radius: 50px;
+}
+
+.controllers *:focus {
+    outline: none;
+}
