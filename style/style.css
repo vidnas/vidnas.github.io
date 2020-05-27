@@ -9,16 +9,28 @@
     scroll-behavior: smooth;
 }
 
+* a{
+    text-decoration: none;
+}
+
+*textarea:focus, *input:focus {
+    outline: none;
+}
+
+*:focus {
+    outline: none;
+}
+
 body {
     background-image: url(../images/knightsbig.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-color: black;
     background-attachment: fixed;
-
-
-    /*    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(20,20,20,1) 49%, rgba(0,0,0,1) 100%);*/
 }
+
+
+/* LOGOS and MISC */
 
 h1 {
     font-family: "Pirata One";
@@ -27,7 +39,6 @@ h1 {
 h2,
 h3 {
     font-family: "Germania One";
-
 }
 
 .glow {
@@ -53,6 +64,9 @@ a {
     text-decoration: none;
 }
 
+
+/* SPLASH PAGE */
+
 #splash {
     background-color: black;
     background-image: url(../images/cansmall.jpg);
@@ -70,7 +84,6 @@ a {
 #splash h1 {
     position: sticky;
     font-size: 10em;
-
 }
 
 #splash h2 {
@@ -113,7 +126,8 @@ a {
     margin-top: 50px;
 }
 
-/* PAGE CONTAINER*/
+
+/* PAGE CONTAINER */
 
 #pagecontainer {
     margin-top: 2vh;
@@ -128,7 +142,7 @@ a {
 }
 
 
-/* LEFT NAV BOX */
+/*  NAV BAR  */
 
 #left-navbox {
     position: sticky;
@@ -141,13 +155,6 @@ a {
     opacity: 80%;
     text-align: center;
     z-index: 100;
-}
-
-#left-navbox h2 {
-    /*
-    border-bottom: 1px white solid;
-    border-top: 1px white solid;
-*/
 }
 
 .button1 {
@@ -211,9 +218,12 @@ a {
     text-align: center;
 }
 
+/*   ABOUT   */
+
 .about-flex {
     display: flex;
     align-items: center;
+    margin-top: 5rem;
 }
 
 .about-flex img {}
@@ -296,13 +306,14 @@ a {
 }
 
 
-/* PROJECTS TIMELINE */
+/* PROJECTS FLEXBOX */
 
 #projTimeline {
     display: flex;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0);
     width: 100%;
+    margin-top:15vh;
 }
 
 .tl-item {
@@ -356,25 +367,6 @@ a {
     background-color: black;
 }
 
-/*
-.tl-content {
-  
-  position: relative;
-  margin-top: 100px;
-    padding: 50px;
-    text-align: center;
-  opacity: 1;
-  color: white;
-}
-.tl-content:hover {
-  
-  position: relative;
-  text-align: center;
-  opacity: 1;
-  color: white;
-}
-*/
-
 
 /* PROJECTS EXPANDED */
 
@@ -400,14 +392,12 @@ a {
     text-align: center;
     padding-left: 30px;
     position: relative;
-
 }
 
 #pagecontainer img {
     max-width: 98%;
     height: auto;
-    border-top: 1px white solid;
-    border-bottom: 1px white solid;
+    box-shadow: 0px 0px 30px -14px rgba(255, 255, 255, 0.5);
 }
 
 .proj-text-box {
@@ -455,6 +445,27 @@ footer {
 
 /*   CONTACT FORM   */
 
+.form-container{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0,0.8); /* Fallback color */
+  margin: auto;
+  padding-top: 8em;
+    animation-name: modalfade;
+  animation-duration: 0.5s
+}
+
+@keyframes modalfade {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
 .submitForm {
     width: 50%;
 }
@@ -487,10 +498,25 @@ input[type=submit]:hover {
     background-color: rgba(20, 20, 20, 0.8);
 }
 
+.contact-links {
+   margin-top:30vh;
+}
 
-/*---- MEDIA QUERY ----*/
+.contact-links button{
+    background: rgba(0,0,0,0.8);
+    border: white solid 2px;
+    padding: 1em;
+    margin: 1em;
+    font-size: 1.5rem;
+}
 
-/* Smartphones (portrait and landscape) ----------- */
+.contact-links button:hover{
+    cursor: crosshair;
+}
+
+/* MEDIA QUERY */
+
+/* Smartphones (portrait and landscape) */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
     #splash h1 {
@@ -509,7 +535,7 @@ input[type=submit]:hover {
         flex-direction: column;
     }
 
-    #about-image{
+    #about-image {
         height: 30vh !important;
         width: auto;
     }
@@ -569,5 +595,5 @@ input[type=submit]:hover {
 }
 
 
-/* iPads (portrait and landscape) ----------- */
+/* iPads (portrait and landscape) */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {}
