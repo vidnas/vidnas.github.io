@@ -28,10 +28,12 @@
     <section id="contentpage" data-aos="fade" data-aos-duration="2000">
 
         <div id="left-navbox" data-aos="fade" data-aos-duration="2000">
+            <a href=#left-navbox>
             <button class="button1" onclick="replace('experience','projects','contact','about')">About</button>
             <button class="button1" onclick="replace('about','projects','contact','experience')">Experience</button>
             <button class="button1" onclick="replace('about','contact','experience','projects')">Projects</button>
             <button class="button1" onclick="replace('about','experience','projects','contact')">Contact</button>
+            </a>
         </div>
 
 
@@ -40,11 +42,11 @@
 
             <div id="right-contentbox" data-aos="fade">
                 <div id="about" style="display:yes" class="right-content">
-                    <h2>About Me</h2>
+                    <h2></h2>
                     <div class="about-flex">
                         <img src="images/personal.png" id="about-image">
                         <p class="content-text">
-                            
+
                             I am a junior web designer and front end developer. I have a passion for minimalist dark themes, music production and creative projects.
                             <br><br>
                             I enjoy working with HTML5, CSS3 and JavaScript. I am currently searching for employment and freelance work.
@@ -55,7 +57,7 @@
                     </div>
                 </div>
                 <div id="experience" style="display:none" class="right-content">
-                    <h2>Experience</h2>
+                    <h2></h2>
                     <div class="timeline">
 
                         <div class="container left">
@@ -82,19 +84,10 @@
                             </div>
                         </div>
 
-                        <!--
-                        <div class="container right">
-                            <div class="content">
-                                <h2>2017</h2>
-                                <p>Lorem ipsum..</p>
-                            </div>
-                        </div>
--->
-
                     </div>
                 </div>
                 <div id="projects" style="display:none" class="right-content">
-                    <h2>Selected Projects</h2>
+                    <h2></h2>
                     <div id="projTimeline">
 
                         <div class="tl-item">
@@ -138,31 +131,32 @@
                 </div>
                 <div id="contact" style="display:none" class="right-content">
 
-                    <h2>Contact</h2>
+                    <h2></h2>
+
+                    <div class="contact-links">
+                        <a href="docs/Max%20Hopkins%20-%20Fagan%20CV%202020.pdf" target="_blank"><button><h2>Curriculum Vitae</h2></button></a>
+                        <a href="https://www.linkedin.com/in/max-hopkins-fagan-87ab4515a/" target="_blank"><button><h2>LinkedIn</h2></button></a>
+                        <button id="modal-btn"><h2>Contact Form</h2></button>
+                    </div>
+
 
                     <center>
-                        <div class="form-container">
+                        <div class="form-container" id="form-modal">
                             <form action="https://formspree.io/xeqlbyoo" class="submitForm">
 
-
-                                <input type="text" id="fname" name="firstname" placeholder="Your first name..">
-
-                                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                                <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
                                 <input type="text" id="email" name="email" placeholder="Email address..">
 
                                 <input type="text" id="phnumb" name="phone-number" placeholder="Phone number..">
 
-
-
-
-                                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                                <textarea id="subject" name="subject" placeholder="How can I help?" style="height:200px"></textarea>
 
                                 <input type="submit" value="Submit">
-
                             </form>
                         </div>
                     </center>
+
 
                 </div>
             </div>
@@ -173,16 +167,18 @@
     <section id="projects-big" data-aos="fade" data-aos-duration="2000">
 
         <div id="left-navbox" data-aos="fade-right" data-aos-duration="2000" data-aos-anchor-placement="bottom-bottom">
+            <a href=#projects-big>
             <button class="button1" onclick="replace('bootstrap', 'vidnas', 'js-game', 'bloody')">Movie Search</button>
             <button class="button1" onclick="replace('bloody', 'vidnas', 'js-game', 'bootstrap')">Travel Site</button>
             <button class="button1" onclick="replace('bootstrap', 'bloody', 'js-game', 'vidnas')">Music Producer</button>
             <button class="button1" onclick="replace('bootstrap', 'vidnas', 'bloody', 'js-game')">Audio Player</button>
+            </a>    
         </div>
 
         <div id="pagecontainer" data-aos="fade">
 
             <div id="bloody" style="display:none" class="proj-expanded">
-                <h2>Movie Search</h2>
+                <h2></h2>
                 <a href="./Projects/Recs/index.html" target="_blank">
                     <img src="images/movies-big.png" class="proj-img">
                     <div class="proj-text-box">
@@ -196,7 +192,7 @@
             </div>
 
             <div id="bootstrap" style="display:none" class="proj-expanded">
-                <h2>Travel Site</h2>
+                <h2></h2>
                 <a href="./Projects/HongKong/index.html" target="_blank">
                     <img src="images/hk-big.png" class="proj-img">
                     <div class="proj-text-box">
@@ -210,7 +206,7 @@
             </div>
 
             <div id="vidnas" style="display:none" class="proj-expanded">
-                <h2>Music Producer</h2>
+                <h2></h2>
                 <a href="./Projects/Bootstrap/index.html" target="_blank">
                     <img src="images/vidnas-big.png" class="proj-img">
                     <div class="proj-text-box">
@@ -224,7 +220,7 @@
             </div>
 
             <div id="js-game" style="display:none" class="proj-expanded">
-                <h2>Audio Player</h2>
+                <h2></h2>
                 <a href="./Projects/MusicPlayer/index.html" target="_blank">
                     <img src="images/mp-big.png" class="proj-img">
                     <div class="proj-text-box">
