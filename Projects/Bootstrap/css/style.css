@@ -186,7 +186,7 @@ header .overlay {
 }
 
 #small-about-text {
-    display: block;
+    display: hidden;
 }
 
 
