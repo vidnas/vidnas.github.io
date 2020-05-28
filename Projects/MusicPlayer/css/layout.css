@@ -185,3 +185,30 @@ input[type=range]:-moz-focusring {
 .controllers *:focus {
     outline: none;
 }
+
+
+/* MEDIA QUERY */
+
+/* Small devices (portrait phones, 576px and up) */
+
+@media (max-width: 575.98px) {
+    
+    .logo-text{
+        display:none;
+    }
+    
+    #player-bg{
+        top:0.5vh;
+    }
+    
+    .style-btn{
+        width:80vw;
+        left: 10vw;
+        top: 93vh;
+        position: fixed;
+    }
+}
+
+@media (max-width: 400px) {
+  
+}
