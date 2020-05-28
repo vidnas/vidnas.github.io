@@ -28,16 +28,16 @@ function movieSearch() {
         document.getElementById("overview").innerHTML = movieFirst.results[0].overview;
         document.getElementById("posterMain").innerHTML = '<img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2' + movieFirst.results[0].poster_path + '" id="poster">';
         document.getElementById("background").src = "https://image.tmdb.org/t/p/original" + movieFirst.results[0].backdrop_path;
-        
-        document.getElementById("rating").innerHTML= movieFirst.results[0].vote_average;
+
+        document.getElementById("rating").innerHTML = movieFirst.results[0].vote_average;
 
         // CALLING OTHER API REQUESTS //
-        
+
         movieSearchExtras(movieFirst);
         movieSearchSimilar(movieFirst);
         movieReviews(movieFirst);
         movieIMDB(movieFirst);
-        
+
     }
     xhr.send();
 }
@@ -98,7 +98,7 @@ function movieSearchSimilar(movieFirst) {
         //SIMILAR 1 //
         document.getElementById("similarPoster1").innerHTML = '<img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2' + movieFirstSimilar.results[0].poster_path + '" width="300" height="auto" id="smallposter">';
 
-//        document.getElementById("title1").innerHTML = movieFirstSimilar.results[0].title;
+        //        document.getElementById("title1").innerHTML = movieFirstSimilar.results[0].title;
 
         //SIMILAR 2 //
         document.getElementById("similarPoster2").innerHTML = '<img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2' + movieFirstSimilar.results[1].poster_path + '" width="300" height="auto" id="smallposter">';
@@ -123,11 +123,11 @@ function movieSearchSimilar(movieFirst) {
 
 function movieReviews(movieFirst) {
 
+    
     var tmdbID = movieFirst.results[0].id;
     var reviews = 'https://api.themoviedb.org/3/movie/' + tmdbID + '/reviews?api_key=898c53e4648c8d01605385c636421936&language=en-US&page=1';
     var xhr4 = new XMLHttpRequest();
     xhr4.open('GET', reviews, true);
-
 
 
     xhr4.onload = function () {
@@ -135,9 +135,10 @@ function movieReviews(movieFirst) {
         var movieFirstReviews = JSON.parse(this.response);
 
         // REVIEW 1 //
-      
-        document.getElementById("review1").innerHTML = '<p>' + movieFirstReviews.results[0].content + '</p>';
 
+        document.getElementById("review1").innerHTML = '<p>' + movieFirstReviews.results[0].content + '</p>';
+        
+        document.getElementById("reviewlink").innerHTML = '<a href='+ movieFirstReviews.results[0].url+'>Full Review</a>'
     }
 
     xhr4.send();
@@ -160,7 +161,7 @@ function movieIMDB(movieFirst) {
         var movieIMDB = JSON.parse(this.response);
 
         // REVIEW 1 //
-      
+
         document.getElementById("imdb").innerHTML = '<a href="https://www.imdb.com/title/' + movieIMDB.imdb_id + '/">IMDB</a>'
 
     }
@@ -172,10 +173,10 @@ function movieIMDB(movieFirst) {
 // ----- SIXTH recommendations links ----- //
 
 function recSearch(movieSimilar) {
-    
-    
+
+
     var recUserInput = movieSimilar.results[0].title;
-    
+
     var url = 'https://api.themoviedb.org/3/search/movie?api_key=898c53e4648c8d01605385c636421936&query=' + recUserInput;
 
     var xhr6 = new XMLHttpRequest();
@@ -186,9 +187,9 @@ function recSearch(movieSimilar) {
 
         var movieFirst = JSON.parse(this.response);
 
-        
-        console.log(recUserInput);   
-        
+
+        console.log(recUserInput);
+
 
         document.getElementById("logo").innerHTML = '<h1 id="logotitle">' + movieFirst.results[0].title; + '</h1>';
 
@@ -196,16 +197,16 @@ function recSearch(movieSimilar) {
         document.getElementById("overview").innerHTML = movieFirst.results[0].overview;
         document.getElementById("posterMain").innerHTML = '<img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2' + movieFirst.results[0].poster_path + '" id="poster">';
         document.getElementById("background").src = "https://image.tmdb.org/t/p/original" + movieFirst.results[0].backdrop_path;
-        
-        document.getElementById("rating").innerHTML= movieFirst.results[0].vote_average;
+
+        document.getElementById("rating").innerHTML = movieFirst.results[0].vote_average;
 
         // CALLING OTHER API REQUESTS //
-        
+
         movieSearchExtras(movieFirst);
         movieSearchSimilar(movieFirst);
         movieReviews(movieFirst);
         movieIMDB(movieFirst);
-        
+
     }
     xhr6.send();
 }
@@ -221,14 +222,12 @@ document.getElementById("btn1").addEventListener("click", searchScroll);
 var userInput = document.getElementById("userInput");
 userInput.addEventListener("keydown", function (e) {
     if (e.keyCode === 13) {
-        completeSearch(e); 
+        completeSearch(e);
         searchScroll(e);
     }
 });
 
-function searchScroll(){
-var movieInfo = document.getElementById("logotitle");
-movieInfo.scrollIntoView();
+function searchScroll() {
+    var movieInfo = document.getElementById("logotitle");
+    movieInfo.scrollIntoView();
 }
-
-
