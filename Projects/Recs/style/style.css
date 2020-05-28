@@ -4,7 +4,10 @@
 
 * {
     scroll-behavior: smooth;
+}
 
+* a{
+    color: lightgrey;
 }
 
 
@@ -288,6 +291,15 @@ table th {
 /* Small devices (portrait phones, 576px and up) */
 
 @media (max-width: 575.98px) {
+    
+    #homepageLink{
+        height: 5vh;
+        width:60vw;
+    }
+    
+    #homepagetext{
+        width:92vw;
+    }
 
     #logo h1 {
         font-size: 4rem;
