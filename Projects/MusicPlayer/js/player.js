@@ -9,7 +9,6 @@ var songTitle = document.getElementById('songTitle');
 var songSlider = document.getElementById('songSlider');
 var currentTime = document.getElementById('currentTime');
 var duration = document.getElementById('duration');
-var volumeSlider = document.getElementById('volumeSlider');
 var nextSongTitle = document.getElementById('nextSongTitle');
 
 var song = new Audio();
